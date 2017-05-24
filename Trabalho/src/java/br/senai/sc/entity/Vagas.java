@@ -22,6 +22,7 @@ public class Vagas {
         this.codigo = codigo;
         this.fileira = fileira;
         this.posicao = posicao;
+        
         this.disp = disp;
     }
 
@@ -51,6 +52,7 @@ public class Vagas {
     public void setPosicao(String posicao) {
         this.posicao = posicao;
     }
+
 
     public String getDisp() {
         return disp;
