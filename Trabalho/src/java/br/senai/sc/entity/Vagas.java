@@ -18,7 +18,7 @@ public class Vagas {
     public Vagas() {
     }
 
-    public Vagas(String codigo, String fileira, String posicao, String status, String disp) {
+    public Vagas(String codigo, String fileira, String posicao, String disp) {
         this.codigo = codigo;
         this.fileira = fileira;
         this.posicao = posicao;
@@ -61,6 +61,4 @@ public class Vagas {
     public void setDisp(String disp) {
         this.disp = disp;
     }
-
-    
 }

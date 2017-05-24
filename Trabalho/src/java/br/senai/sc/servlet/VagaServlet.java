@@ -31,10 +31,9 @@ public class VagaServlet extends HttpServlet {
     String codigo = request.getParameter("codigo");
     String fileira = request.getParameter("fileira");
     String posicao = request.getParameter("posicao");
-    String status = request.getParameter("status");
     String disp = request.getParameter("disp");
     
-    Vagas v = new Vagas(codigo, fileira, posicao, status, disp);
+    Vagas v = new Vagas(codigo, fileira, posicao, disp);
     
     VagaDAO vdao = new VagaDAO();
     
