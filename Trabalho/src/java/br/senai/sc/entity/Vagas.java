@@ -13,7 +13,6 @@ public class Vagas {
     private String codigo;
     private String fileira;
     private String posicao;
-    private String status;
     private String disp;
 
     public Vagas() {
@@ -23,7 +22,6 @@ public class Vagas {
         this.codigo = codigo;
         this.fileira = fileira;
         this.posicao = posicao;
-        this.status = status;
         this.disp = disp;
     }
 
@@ -52,14 +50,6 @@ public class Vagas {
 
     public void setPosicao(String posicao) {
         this.posicao = posicao;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 
     public String getDisp() {
