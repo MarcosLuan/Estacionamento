@@ -5,8 +5,12 @@
  */
 package br.senai.sc.servlet;
 
+import br.senai.sc.DAO.UsuarioDAO;
+import br.senai.sc.entity.Usuario;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,7 +27,24 @@ public class UsuarioServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        request.
+        String placa = request.getParameter("placa");
+        String nome = request.getParameter("nome");
+        
+        Usuario usuario = new Usuario(placa,nome);
+        UsuarioDAO uDAO = new UsuarioDAO();
+        
+        try{
+            uDAO.insert(usuario);
+            
+        } catch (Exception ex) {
+            Logger.getLogger(UsuarioServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        
+        
+        
+        
     }
 
     
