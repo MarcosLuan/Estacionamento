@@ -35,7 +35,7 @@ public class UsuarioServlet extends HttpServlet {
         
         try{
             uDAO.insert(usuario);
-            request.getRequestDispatcher("Cadastradas.jsp").forward(request, response);
+            request.getRequestDispatcher("Inicial1.html").forward(request, response);
             
         } catch (Exception ex) {
             Logger.getLogger(UsuarioServlet.class.getName()).log(Level.SEVERE, null, ex);

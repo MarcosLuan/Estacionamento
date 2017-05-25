@@ -15,7 +15,7 @@ import br.senai.sc.entity.Usuario;
 public class UsuarioDAO {
     
     public void insert(Usuario usuario) throws Exception{
-        String sql = "insert into usuario(VPlaca,VNome) values (?,?)";
+        String sql = "insert into usuario(VPlaca,VNome,VHentrada) values (?,?, current_timestamp)";
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
         
         sqlPrep.setString(1,usuario.getVPlaca());
