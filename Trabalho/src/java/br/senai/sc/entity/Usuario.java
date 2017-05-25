@@ -14,6 +14,14 @@ public class Usuario {
     private String VPlaca;
     private String VNome;
 
+    public Usuario() {
+    }
+
+    public Usuario(String VPlaca, String VNome) {
+        this.VPlaca = VPlaca;
+        this.VNome = VNome;
+    }
+    
     public String getVPlaca() {
         return VPlaca;
     }
