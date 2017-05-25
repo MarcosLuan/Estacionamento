@@ -13,6 +13,6 @@
     </head>
     <body>
         <h1>Vaga ${fileira}-${posicao} cadastrada com sucesso</h1>
-        <br><a href='index.html'>voltar</a>
+        <br><a href='Inicial1.html'>voltar</a>
     </body>
 </html>

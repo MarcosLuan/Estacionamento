@@ -14,7 +14,7 @@ import br.senai.sc.conexao1.Conexao;
  */
 public class VagaDAO {
     public void insert (Vagas vagas)throws Exception {
-        String sql = "insert into vaga (VCod, VFileira, VPosicao, VStatus, Vdisp) values (?,?,?,?)";
+        String sql = "insert into vaga (VCod, VFileira, VPosicao, Vdisp) values (?,?,?,?)";
         
         //prepara a instrução para ser enviada ao banco de dados
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
