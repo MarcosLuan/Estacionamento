@@ -26,9 +26,11 @@ public class UsuarioDAO {
     }
    public void update(String VPlaca) throws Exception{
         
-        String sql = "UPADATE usuario SET VHsaida=current_timestamp where VPlacla=" + VPlaca;
+        String sql = "UPADATE usuario SET VHsaida=current_timestamp where VPlaca='" + VPlaca+"'";
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);        
         
-        int retorno = sqlPrep.executeUpdate();        
-    }
+        System.out.println(sqlPrep);
+        
+        sqlPrep.execute();
+      }
 }
