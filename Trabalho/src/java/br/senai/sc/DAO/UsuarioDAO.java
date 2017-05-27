@@ -26,7 +26,7 @@ public class UsuarioDAO {
     }
    public void update(String VPlaca) throws Exception{
         
-        String sql = "UPADATE usuario SET VHsaida=current_timestamp where VPlaca='" + VPlaca+"'";
+        String sql = "UPDATE usuario SET VHsaida=current_timestamp where VPlaca='" + VPlaca+"'";
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);        
         
         System.out.println(sqlPrep);
