@@ -13,6 +13,9 @@ public class Usuario {
     
     private String VPlaca;
     private String VNome;
+    private String VHentrada;
+    private String VHsaida;
+    
 
     public Usuario() {
     }
