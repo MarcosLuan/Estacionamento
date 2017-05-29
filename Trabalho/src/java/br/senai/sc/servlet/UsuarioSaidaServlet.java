@@ -7,6 +7,7 @@ package br.senai.sc.servlet;
 
 import br.senai.sc.DAO.UsuarioDAO;
 import br.senai.sc.DAO.VagaDAO;
+import br.senai.sc.entity.Usuario;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.logging.Level;
@@ -34,6 +35,12 @@ public class UsuarioSaidaServlet extends HttpServlet {
         
         try {
             uDAO.update(placa);
+            Usuario usuario = uDAO.buscarById(placa);
+            double valor = usuario.calcularValorPagemento();
+            System.out.println("valor :"+valor);
+            request.setAttribute("valor", valor);
+            request.getRequestDispatcher("pagamento.jsp").forward(request, response);
+            
         } catch (Exception ex) {
             Logger.getLogger(UsuarioSaidaServlet.class.getName()).log(Level.SEVERE, null, ex);
         }

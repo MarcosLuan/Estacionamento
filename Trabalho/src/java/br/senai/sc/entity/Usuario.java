@@ -15,6 +15,7 @@ public class Usuario {
     private String VNome;
     private String VHentrada;
     private String VHsaida;
+    private int tempo;
     
 
     public Usuario() {
@@ -24,6 +25,42 @@ public class Usuario {
         this.VPlaca = VPlaca;
         this.VNome = VNome;
     }
+
+    
+    public Usuario(String VPlaca, String VNome, String VHentrada, String VHsaida, int tempo) {
+        this.VPlaca = VPlaca;
+        this.VNome = VNome;
+        this.VHentrada = VHentrada;
+        this.VHsaida = VHsaida;
+        this.tempo = tempo;
+    }
+    
+
+    public String getVHentrada() {
+        return VHentrada;
+    }
+
+    public void setVHentrada(String VHentrada) {
+        this.VHentrada = VHentrada;
+    }
+
+    public String getVHsaida() {
+        return VHsaida;
+    }
+
+    public void setVHsaida(String VHsaida) {
+        this.VHsaida = VHsaida;
+    }
+
+    public int getTempo() {
+        return tempo;
+    }
+
+    public void setTempo(int tempo) {
+        this.tempo = tempo;
+    }
+
+    
     
     public String getVPlaca() {
         return VPlaca;
@@ -39,6 +76,11 @@ public class Usuario {
 
     public void setVNome(String VNome) {
         this.VNome = VNome;
+    }
+
+    public double calcularValorPagemento() {
+    
+        return tempo * 0.05;
     }
     
     
