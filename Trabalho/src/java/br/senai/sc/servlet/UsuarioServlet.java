@@ -38,7 +38,7 @@ public class UsuarioServlet extends HttpServlet {
             request.getRequestDispatcher("Inicial1.html").forward(request, response);
             
         } catch (Exception ex) {
-            Logger.getLogger(UsuarioServlet.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Erro: "+ex);;
         }
    }
 }
