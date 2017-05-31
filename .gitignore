@@ -196,5 +196,7 @@ pip-log.txt
 Trabalho/nbproject/private/private.properties
 
 Trabalho/nbproject/private/private.properties
-
-Trabalho/src/java/br/senai/sc/conexao1/Conexao.java
+Trabalho/src/java/br/senai/sc/entity/Usuario.java
+*.java
+*.xml
+Trabalho/nbproject/private/private.xml

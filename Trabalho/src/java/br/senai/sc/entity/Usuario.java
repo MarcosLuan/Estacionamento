@@ -13,10 +13,13 @@ public class Usuario {
     
     private String VPlaca;
     private String VNome;
+<<<<<<< HEAD
     private String VHentrada;
     private String VHsaida;
     private int tempo;
     
+=======
+>>>>>>> parent of 6b9a421... calcula tempo
 
     public Usuario() {
     }

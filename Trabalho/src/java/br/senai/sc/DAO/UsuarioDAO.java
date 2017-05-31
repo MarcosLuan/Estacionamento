@@ -27,9 +27,13 @@ public class UsuarioDAO {
     }
    public void update(String VPlaca) throws Exception{
         
+<<<<<<< HEAD
         String sql = "UPDATE usuario SET VHsaida=current_timestamp, "
                 + "tempo = timestampdiff(minute, VHentrada, VHsaida)  "
                 + "where VPlaca='" + VPlaca+"'";
+=======
+        String sql = "UPDATE usuario SET VHsaida=current_timestamp where VPlaca='" + VPlaca+"'";
+>>>>>>> parent of 6b9a421... calcula tempo
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);        
         
         System.out.println(sqlPrep);
