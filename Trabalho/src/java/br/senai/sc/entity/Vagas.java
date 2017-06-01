@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -5,60 +6,82 @@
  */
 package br.senai.sc.entity;
 
-/**
+/**IÎ||«|
  *
- * @author Marcos_Laís
+ * @author andersonfrare
  */
 public class Vagas {
-    private String codigo;
-    private String fileira;
-    private String posicao;
-    private String disp;
-
+    
+    private String VPlaca;
+    private String VNome;
+    private String VHentrada;
+    private String VHsaida;
+    private int tempo;
+    
     public Vagas() {
     }
 
-    public Vagas(String codigo, String fileira, String posicao, String disp) {
-        this.codigo = codigo;
-        this.fileira = fileira;
-        this.posicao = posicao;
-        
-        this.disp = disp;
+    public Vagas(String VPlaca, String VNome) {
+        this.VPlaca = VPlaca;
+        this.VNome = VNome;
     }
 
-   
+    
+    public Vagas    (String VPlaca, String VNome, String VHentrada, String VHsaida, int tempo) {
+        this.VPlaca = VPlaca;
+        this.VNome = VNome;
+        this.VHentrada = VHentrada;
+        this.VHsaida = VHsaida;
+        this.tempo = tempo;
+    }
+    
+
+    public String getVHentrada() {
+        return VHentrada;
+    }
+
+    public void setVHentrada(String VHentrada) {
+        this.VHentrada = VHentrada;
+    }
+
+    public String getVHsaida() {
+        return VHsaida;
+    }
+
+    public void setVHsaida(String VHsaida) {
+        this.VHsaida = VHsaida;
+    }
+
+    public int getTempo() {
+        return tempo;
+    }
+
+    public void setTempo(int tempo) {
+        this.tempo = tempo;
+    }
+
     
     
-    public String getCodigo() {
-        return codigo;
+    public String getVPlaca() {
+        return VPlaca;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setVPlaca(String VPlaca) {
+        this.VPlaca = VPlaca;
     }
 
-    public String getFileira() {
-        return fileira;
+    public String getVNome() {
+        return VNome;
     }
 
-    public void setFileira(String fileira) {
-        this.fileira = fileira;
+    public void setVNome(String VNome) {
+        this.VNome = VNome;
     }
 
-    public String getPosicao() {
-        return posicao;
+    public double calcularValorPagemento() {
+    
+        return tempo * 0.05;
     }
-
-    public void setPosicao(String posicao) {
-        this.posicao = posicao;
-    }
-
-
-    public String getDisp() {
-        return disp;
-    }
-
-    public void setDisp(String disp) {
-        this.disp = disp;
-    }
+    
+    
 }

@@ -5,7 +5,7 @@
  */
 package br.senai.sc.servlet;
 
-import br.senai.sc.DAO.VagaDAO;
+import br.senai.sc.DAO.UsuarioDAO;
 import br.senai.sc.entity.Vagas;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -35,7 +35,7 @@ public class VagaServlet extends HttpServlet {
     
     Vagas v = new Vagas(codigo, fileira, posicao, disp);
     
-    VagaDAO vdao = new VagaDAO();
+    UsuarioDAO vdao = new UsuarioDAO();
     
     try {
         vdao.insert(v);

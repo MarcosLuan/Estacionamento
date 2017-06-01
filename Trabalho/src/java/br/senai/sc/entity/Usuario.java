@@ -5,86 +5,65 @@
  */
 package br.senai.sc.entity;
 
-/**IÎ||«|
+/**
  *
- * @author andersonfrare
+ * @author Marcos_Laís
  */
 public class Usuario {
-    
-    private String VPlaca;
-    private String VNome;
-<<<<<<< HEAD
-    private String VHentrada;
-    private String VHsaida;
-    private int tempo;
-    
-=======
->>>>>>> parent of 6b9a421... calcula tempo
+    private String nome;
+    private String email;
+    private String senha;
+    private String placacar;
+    private String modelocar;
 
     public Usuario() {
     }
 
-    public Usuario(String VPlaca, String VNome) {
-        this.VPlaca = VPlaca;
-        this.VNome = VNome;
+    public Usuario(String codigo, String fileira, String posicao, String disp) {
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+        this.placacar = placacar;
+        this.modelocar = modelocar;
     }
 
-    
-    public Usuario(String VPlaca, String VNome, String VHentrada, String VHsaida, int tempo) {
-        this.VPlaca = VPlaca;
-        this.VNome = VNome;
-        this.VHentrada = VHentrada;
-        this.VHsaida = VHsaida;
-        this.tempo = tempo;
-    }
-    
-
-    public String getVHentrada() {
-        return VHentrada;
+    public String getNome() {
+        return nome;
     }
 
-    public void setVHentrada(String VHentrada) {
-        this.VHentrada = VHentrada;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getVHsaida() {
-        return VHsaida;
+    public String getEmail() {
+        return email;
     }
 
-    public void setVHsaida(String VHsaida) {
-        this.VHsaida = VHsaida;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public int getTempo() {
-        return tempo;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setTempo(int tempo) {
-        this.tempo = tempo;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
-    
-    
-    public String getVPlaca() {
-        return VPlaca;
+    public String getPlacacar() {
+        return placacar;
     }
 
-    public void setVPlaca(String VPlaca) {
-        this.VPlaca = VPlaca;
+    public void setPlacacar(String placacar) {
+        this.placacar = placacar;
     }
 
-    public String getVNome() {
-        return VNome;
+    public String getModelocar() {
+        return modelocar;
     }
 
-    public void setVNome(String VNome) {
-        this.VNome = VNome;
+    public void setModelocar(String modelocar) {
+        this.modelocar = modelocar;
     }
-
-    public double calcularValorPagemento() {
-    
-        return tempo * 0.05;
-    }
-    
-    
 }
