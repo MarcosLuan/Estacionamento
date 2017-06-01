@@ -17,21 +17,21 @@ and open the template in the editor.
             <form action="UsuarioServlet" method="POST">
                  
                 <label for="nome">Nome: </label><br>
-                <input type="text" class="form-control"  id="nome" name="nome"/>
+                <input type="text" class="form-control"  id="nome" name="nome" autofocus required />
                
                 <br>
-                  <div class="form-group">
-                <label for="nome">E-mail: </label><br>
-                <input type="email" class="form-control" id="email" name="email"/>
+                  
+                <label for="email">E-mail: </label><br>
+                <input type="email" class="form-control" id="email" name="email"required/>
                 <br>
-                <label for="nome">Senha: </label><br>
-                <input type="password" class="form-control" id="senha" name="senha"/>
+                <label for="senha">Senha: </label><br>
+                <input type="password" class="form-control" id="senha" name="senha"required/>
                 <br>
-                <label for="nome">Placa do Carro: </label><br>
-                <input type="number" class="form-control" id="placacar" name="placacar"/>
+                <label for="placacar">Placa do Carro: </label><br>
+                <input type="text" class="form-control" id="placacar" name="placacar"required/>
                 <br>
-                <label for="nome">Modelo do Carro: </label><br>
-                <input type="number" class="form-control" id="modelocar" name="modelocar"/>
+                <label for="modelocar">Modelo do Carro: </label><br>
+                <input type="text" class="form-control" id="modelocar" name="modelocar"required/>
                 <br>
                 <br>
                 <input type="submit" class="btn btn-primary" value="Cadastrar" />
