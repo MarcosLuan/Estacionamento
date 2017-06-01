@@ -19,7 +19,7 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String codigo, String fileira, String posicao, String disp) {
+    public Usuario(String nome, String email, String senha, String placacar, String modelocar) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;

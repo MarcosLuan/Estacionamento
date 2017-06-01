@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Vaga ${fileira}-${posicao} cadastrada com sucesso</h1>
+        <h1>Usuário cadastrado com sucesso</h1>
         <br><a href='CadastroUsuario.html'>voltar</a>
     </body>
 </html>

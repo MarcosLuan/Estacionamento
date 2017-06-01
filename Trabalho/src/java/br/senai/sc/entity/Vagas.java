@@ -11,7 +11,7 @@ package br.senai.sc.entity;
  * @author andersonfrare
  */
 public class Vagas {
-    
+
     private String VPlaca;
     private String VNome;
     private String VHentrada;
@@ -78,7 +78,7 @@ public class Vagas {
         this.VNome = VNome;
     }
 
-    public double calcularValorPagemento() {
+    public double calcularValorPagamento() {
     
         return tempo * 0.05;
     }
