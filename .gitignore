@@ -191,17 +191,3 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-*.properties
-
-Trabalho/nbproject/private/private.properties
-
-Trabalho/nbproject/private/private.properties
-<<<<<<< HEAD
-Trabalho/src/java/br/senai/sc/entity/Usuario.java
-*.java
-*.xml
-Trabalho/nbproject/private/private.xml
-=======
-
-
->>>>>>> b178dccf42b807e6cdad00b6b6bc417823739066
