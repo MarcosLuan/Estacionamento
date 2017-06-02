@@ -24,6 +24,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "VagasServlet", urlPatterns = {"/VagasServlet"})
 public class VagasServlet extends HttpServlet {
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         

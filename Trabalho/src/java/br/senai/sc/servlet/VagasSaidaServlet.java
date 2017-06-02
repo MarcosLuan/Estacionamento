@@ -31,12 +31,13 @@ public class VagasSaidaServlet extends HttpServlet {
 
        String placa = request.getParameter("placa");
         VagasDAO vDAO = new VagasDAO();
+
         
         try {
             vDAO.update(placa);
             Vagas vaga = vDAO.buscarById(placa);
+            //Vagas vaga = new Vagas ("AGV-1295", "Pedro", "2017-06-01 21:17:53", "2017-06-01 21:20:53", 3);
             double valor = vaga.calcularValorPagamento();
-            System.out.println("valor :"+valor);
             request.setAttribute("valor", valor);
             request.getRequestDispatcher("pagamento.jsp").forward(request, response);
             
