@@ -38,13 +38,13 @@ public class VagasDAO {
       }
    public Vagas buscarById(String placa) throws Exception {
 
-        String sql = "select * from vagas where VPlaca=cast('" + placa+"' as char(8))";
+        String sql = "select * from vagas where VPlaca = '" + placa+"'";
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
-        System.out.println(sql);
         ResultSet rs = sqlPrep.executeQuery();
 
  
-       
+        rs.first();
+                
           
               Vagas vaga =  new Vagas(rs.getString("VPlaca") , 
                       rs.getString("VNome"),

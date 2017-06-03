@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Total a pagar:${valor}</h1>
+        <h1>Total a pagar: R$${valor}</h1>
         
     </body>
 </html>
