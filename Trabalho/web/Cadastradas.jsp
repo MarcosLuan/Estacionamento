@@ -13,6 +13,6 @@
     </head>
     <body>
         <h1>Usuário cadastrado com sucesso</h1>
-        <br><a href='CadastroUsuario.html'>voltar</a>
+        <br><a href='login.html'>voltar</a>
     </body>
 </html>

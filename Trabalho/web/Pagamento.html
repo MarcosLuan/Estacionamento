@@ -12,15 +12,18 @@ and open the template in the editor.
     </head>
     <body>
         <h1>Tela para Pagamento</h1>
-        <form action="PagSaidaServlet" method="POST">
-           <!--<h2>O valor para pagamento é: <text type="" value="VHsaida * 0.05"></h2><br>-->
+        <form action="VagasSaidaServlet" method="POST">
+           <!--<h2>O valor para pagamento é: <text type="" value="VHsaida * 0.05"></h2><br>-->  
+            <br>
+            <label for="nome">Por favor, informe a placa do veículo</label>
             <br>
             <br>
-            <label for="nome">Por favor, insira seu cartão e sua senha</label>
+            <label for="nome">Placa: </label><br>
+            <input type="text" id="placa" name="placa"/>
             <br>
             <br>
-            <input type="submit" value="OK" />
-            <br><br><a href='Inicial1.html'>voltar</a>
+            <input type="submit" value="OK"/>
+            <br><br><a href='indexx.html'>voltar</a>
         </form>
     </body>
 </html>

@@ -24,6 +24,16 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "VagasSaidaServlet", urlPatterns = {"/VagasSaidaServlet"})
 public class VagasSaidaServlet extends HttpServlet {
 
+    
+        @Override
+        protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        response.setContentType("text/plain");
+        
+        response.getWriter().write("Pagamento efetuado com sucesso, clique em sair!");
+    }
+        
    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -31,15 +41,17 @@ public class VagasSaidaServlet extends HttpServlet {
 
        String placa = request.getParameter("placa");
         VagasDAO vDAO = new VagasDAO();
-
+        
         
         try {
             vDAO.update(placa);
             Vagas vaga = vDAO.buscarById(placa);
-            //Vagas vaga = new Vagas ("AGV-1295", "Pedro", "2017-06-01 21:17:53", "2017-06-01 21:20:53", 3);
             double valor = vaga.calcularValorPagamento();
             request.setAttribute("valor", valor);
             request.getRequestDispatcher("pagamento.jsp").forward(request, response);
+            
+        response.setContentType("text/plain");
+        response.getWriter().write("Pagamento efetuado com sucesso, clique em sair");
             
         } catch (Exception ex) {
             Logger.getLogger(VagasSaidaServlet.class.getName()).log(Level.SEVERE, null, ex);
