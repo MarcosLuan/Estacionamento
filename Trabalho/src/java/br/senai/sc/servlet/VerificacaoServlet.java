@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author Marcos_Laís
  */
-@WebServlet(name = "VerificacaoServlet", urlPatterns = {"/VerificacaoServlet"})
+@WebServlet(name = "VerificacaoServlet", urlPatterns = {"/VerificacaoServlet,/verificarlogin"})
 public class VerificacaoServlet extends HttpServlet {
 
     
@@ -26,9 +26,13 @@ public class VerificacaoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        String email = request.getParameter("email");
+        String senha = request.getParameter("senha");
+        
         HttpSession session = request.getSession();
         
         /*Receber os dados do usuário e consultar do banco*/
+        
         
         session.setAttribute("user", "Marcos");
         session.setAttribute("fullname", "Marcos Luan");
