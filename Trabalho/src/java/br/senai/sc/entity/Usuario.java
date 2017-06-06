@@ -5,11 +5,15 @@
  */
 package br.senai.sc.entity;
 
+import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
+import javax.servlet.http.HttpSession;
+
 /**
  *
  * @author Marcos_Laís
  */
 public class Usuario {
+
     private String nome;
     private String email;
     private String senha;
@@ -66,4 +70,10 @@ public class Usuario {
     public void setModelocar(String modelocar) {
         this.modelocar = modelocar;
     }
+
+    /*public void logarUsuario(String usuario) {
+        HttpSession session = request.getSession()
+
+        session.setAttribute("user", usuario);
+    }*/
 }
