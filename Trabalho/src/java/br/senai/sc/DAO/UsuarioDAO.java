@@ -28,5 +28,23 @@ public class UsuarioDAO {
         
         sqlPrep.execute();
     }    
+    public Usuario Logar(String email) throws Exception {
+
+        String sql = "select * from usuario where e-mail = '" +email +"'";
+        java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
+        ResultSet rs = sqlPrep.executeQuery();
+
+ 
+        rs.first();
+                
+          
+              Vagas vaga =  new Vagas(rs.getString("VPlaca") , 
+                      rs.getString("VNome"),
+                      rs.getString("VHentrada"),
+                      rs.getString("VHsaida"),
+                      rs.getInt("tempo"));
+        return vaga;
+    }   
+}
     
 }
