@@ -33,7 +33,8 @@ public class VerificacaoServlet extends HttpServlet {
         String senha = request.getParameter("senha");
 
         UsuarioDAO uDAO = new UsuarioDAO();
-
+        HttpSession session = request.getSession();
+        
         try {
             Usuario usuario = uDAO.BuscarUsuario(email, senha);
             if (usuario == null) {
@@ -43,7 +44,7 @@ public class VerificacaoServlet extends HttpServlet {
                 
             }else{
                 //usuario.logarUsuario(usuario.getEmail());
-                HttpSession session = request.getSession();
+                
 
             /*Receber os dados do usuário e consultar do banco*/
             session.setAttribute("user", usuario.getEmail());
@@ -57,6 +58,8 @@ public class VerificacaoServlet extends HttpServlet {
             }
 
             request.getRequestDispatcher("teste.jsp").forward(request, response);
+            response.setContentType("text/plain");
+            response.getWriter().write((String) session.getAttribute("user"));
             
         } catch (Exception ex) {
             Logger.getLogger(VerificacaoServlet.class.getName()).log(Level.SEVERE, null, ex);

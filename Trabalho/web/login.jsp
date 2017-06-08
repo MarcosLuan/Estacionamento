@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        
-        <main class="container">
-        	<h1 class="text-center">Login</h1>
+<%-- 
+    Document   : login
+    Created on : 07/06/2017, 21:09:35
+    Author     : Marcos_Laís
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@include file="/Cabecalho.html" %>
+
+<h1 class="text-center">Login</h1>
             <br>
             <div class="row">
                 <div class="col-md-8 col-sm-8">
@@ -32,7 +25,7 @@ and open the template in the editor.
                         	</div>
                         </div>
                         <div class="col-sm-offset-2 col-md-6 col-sm-6">
-                        <input type="submit" class="btn btn-lg btn-primary btn-block" value="Logar" />
+                        <input id="btnLogar" type="submit" class="btn btn-lg btn-primary btn-block" value="Logar" />
                         <a href="#">Esqueceu a senha?</a>
                         </div>
                     </form>
@@ -42,14 +35,12 @@ and open the template in the editor.
                     <div class="col-md-4 col-sm-4">
                         <h3>Não é cadastrado?</h3>
                         <div class="col-sm-offset-1 col-md-2 col-sm-2">
-                        <form action="CadastroUsuario.html" method="get">
+                        <form action="CadastroUsuario.jsp" method="get">
                             <input class="btn btn-success" type="submit" value="Criar novo Usuario" />
                         </form>
                         </div>
-                    </div>
-                
-        	   
+                    </div>       	   
             </div>
-		</main>
+	</main>
     </body>
 </html>

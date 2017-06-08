@@ -5,8 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+<%@include file="/Cabecalho.html" %>
+
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
@@ -23,7 +23,7 @@
             <button id="btn1">Efetuar pagamento</button>
             <div id="div1"></div>
             <br>
-            <br><a href='indexx.html'>sair</a>
+            <br><a href='indexx.jsp'>sair</a>
         
     </body>
 </html>
