@@ -5,11 +5,14 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="/Cabecalho.html" %>
+<%@include file="/cabecalho.jsp" %>
 <%= session.getAttribute("user") %>
                         
             <h1 class="${class}">${mensagem}</h1>
             <br><a href='indexx.jsp'>voltar</a>
-        </div>
+            </main>
+            
+      <script src="js/jquery.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>

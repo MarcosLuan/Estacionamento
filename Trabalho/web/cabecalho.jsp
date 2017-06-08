@@ -1,3 +1,10 @@
+<%-- 
+    Document   : cabecalho
+    Created on : 08/06/2017, 10:48:45
+    Author     : andersonfrare
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
