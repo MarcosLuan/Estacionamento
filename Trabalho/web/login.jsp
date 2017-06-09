@@ -11,7 +11,7 @@
 <br>
 <div class="row">
     <div class="col-md-8 col-sm-8">
-        <form action="VerificacaoServlet" method="post" class="form-horizontal">
+        <form action="UsuarioLoginServlet" method="post" class="form-horizontal">
             <div class="form-group">
                 <label for="nome" class="col-md-2 col-sm-2 control-label">E-mail: </label>
                 <div class="col-md-6 col-sm-6">

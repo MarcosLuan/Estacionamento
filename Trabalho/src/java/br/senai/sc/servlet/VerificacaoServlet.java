@@ -29,49 +29,26 @@ public class VerificacaoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String email = request.getParameter("email");
-        String senha = request.getParameter("senha");
 
-        UsuarioDAO uDAO = new UsuarioDAO();
+        
         HttpSession session = request.getSession();
         
-        
-        try {
-            if (session.getAttribute("user") == null){
-            Usuario usuario = uDAO.BuscarUsuario(email, senha);
-            if (usuario == null) {
-                String mensagem = "Usuario ou senha nao encontrado";
-                request.setAttribute("mensagem", mensagem);
-                request.setAttribute("class", "alert-danger");
-                
-            }else{
-                //usuario.logarUsuario(usuario.getEmail());
-                
-
-            /*Receber os dados do usuário e consultar do banco*/
-            session.setAttribute("user", usuario.getEmail());
-            
-            
-                String mensagem = "Usuario "+usuario.getEmail() + " logado com sucesso!!";
-                request.setAttribute("mensagem", mensagem);
-                request.setAttribute("class", "alert-success");
-                
-            
-            //session.setAttribute("fullname", "Marcos Luan");
-            }    
-            }else {
+            if(session.getAttribute("user") != null){
                 
                 Object user = session.getAttribute("user");
                 response.setContentType("text/plain");
-                response.getWriter().write((String) user); 
+                response.getWriter().write((String) user);
+                response.getWriter().write("<a href='UsuarioDeslogaServlet'>deslogar</a>");
+            }else{
+                response.setContentType("text/plain");
+                response.getWriter().write("<a href='login.jsp'>Login</a>");
+            }
+                
             }
             
-            //request.getRequestDispatcher("teste.jsp").forward(request, response);
-            
-        } catch (Exception ex) {
-            Logger.getLogger(VerificacaoServlet.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            //request.getRequestDispatcher("indexx.jsp").forward(request, response);
+         
 
     }
 
-}
+

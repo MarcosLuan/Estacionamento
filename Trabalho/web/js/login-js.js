@@ -8,10 +8,12 @@ $(document).ready(function () {
             type: 'POST', //é o método GET
             data: {//vai as variáveis do projeto
                 email: $('#email').val(),
+                
                 senha: $('#senha').val()
             },
             success: function (response) {//retorna uma resposta
-                $('#Login').text(response);
+                $('#Login').append(response);
+                
             }
         });
    // });

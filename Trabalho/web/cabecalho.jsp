@@ -64,7 +64,7 @@ and open the template in the editor.
             <ul class="nav navbar-nav navbar-right">
               
               
-              <li id="Login"><a href="login.jsp">Login</a></li>
+              <li id="Login"></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
