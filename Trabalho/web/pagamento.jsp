@@ -5,15 +5,9 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="/Cabecalho.html" %>
+<%@include file="/cabecalho.jsp" %>
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-        <script type="text/javascript" src="js/appv-js.js"></script>
-        <title>JSP Page</title>
-    </head>
-    <body>
+    
         <h1>Total a pagar: R$${valor}</h1>
         <br>
         <label for="nome">Informe sua senha: </label><br>
@@ -24,6 +18,4 @@
             <div id="div1"></div>
             <br>
             <br><a href='indexx.jsp'>sair</a>
-        
-    </body>
-</html>
+            <%@include file="/rodape.jsp" %>

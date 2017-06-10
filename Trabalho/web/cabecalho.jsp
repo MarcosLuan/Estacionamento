@@ -1,3 +1,10 @@
+<%-- 
+    Document   : cabecalho
+    Created on : 08/06/2017, 10:48:45
+    Author     : andersonfrare
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -57,7 +64,7 @@ and open the template in the editor.
             <ul class="nav navbar-nav navbar-right">
               
               
-              <li id="Login"><a href="login.jsp">Login</a></li>
+              <li id="Login"></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
