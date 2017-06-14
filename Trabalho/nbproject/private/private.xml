@@ -7,11 +7,13 @@
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/entity/Usuario.java</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/pagamento.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VerificacaoServlet.java</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioLoginServlet.java</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/rodape.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/Pagamento.html</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/teste.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/index.html</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsurioAtualizarServlet.java</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioDeslogaServlet.java</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/Cadastradas.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/js/login-js.js</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/DAO/VagasDAO.java</file>
@@ -21,7 +23,6 @@
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/js/appv-js.js</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/atualizarUsuario.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/cabecalho.jsp</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioLoguinServlet.java</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/indexx.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/CadastroUsuario.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/login.jsp</file>
