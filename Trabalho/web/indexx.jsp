@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="/cabecalho.jsp" %>
+
       			<H1 class="text-center">Estacione em 3 etapas </H1>
       			<br>
       			<br>

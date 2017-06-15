@@ -3,50 +3,31 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/conexao1/Conexao.java</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/entity/Usuario.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/pagamento.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VerificacaoServlet.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioLoginServlet.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/rodape.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/Pagamento.html</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/teste.jsp</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/index.html</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsurioAtualizarServlet.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioDeslogaServlet.java</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/Cadastradas.jsp</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/js/login-js.js</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/DAO/VagasDAO.java</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioServlet.java</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/SaidaUsu.html</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/erro.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/js/appv-js.js</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/atualizarUsuario.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/cabecalho.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/indexx.jsp</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/DAO/UsuarioDAO.java</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/AcessoUsu.html</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/pagamento.jsp</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioLoginServlet.java</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/rodape.jsp</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/index.html</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioDeslogaServlet.java</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/js/login-js.js</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/erro.jsp</file>
+            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/atualizarUsuario.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/CadastroUsuario.jsp</file>
             <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/login.jsp</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/DAO/UsuarioDAO.java</file>
-=======
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/erro.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/js/appv-js.js</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/indexx.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioDeslogaServlet.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/pagamento.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/SaidaUsu.html</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioLoginServlet.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/Inicial1.html</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/Pagamento.html</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/CadastroUsuario.html</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/login.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/teste.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/CadastroUsuario.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/atualizarUsuario.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VerificacaoServlet.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VagasSaidaServlet.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/js/login-js.js</file>
->>>>>>> origin/master
         </group>
     </open-files>
 </project-private>

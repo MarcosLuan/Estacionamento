@@ -61,6 +61,10 @@ public class UsuarioLoginServlet extends HttpServlet {
 
             /*Receber os dados do usuário e consultar do banco*/
             session.setAttribute("user", usuario.getEmail());
+            session.setAttribute("placa", usuario.getPlacacar());
+            session.setAttribute("nome", usuario.getNome());
+
+
             
             
                 String mensagem = "Usuario "+usuario.getEmail() + " logado com sucesso!!";
