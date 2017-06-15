@@ -45,8 +45,6 @@ public class UsuarioLoginServlet extends HttpServlet {
         HttpSession session = request.getSession();
         
         
-        
-            
             Usuario usuario;
         try {
             usuario = uDAO.BuscarUsuario(email, senha);
@@ -56,28 +54,23 @@ public class UsuarioLoginServlet extends HttpServlet {
                 request.setAttribute("class", "alert-danger");
                 
             }else{
-                //usuario.logarUsuario(usuario.getEmail());
-                
 
             /*Receber os dados do usuário e consultar do banco*/
             session.setAttribute("user", usuario.getEmail());
             session.setAttribute("placa", usuario.getPlacacar());
             session.setAttribute("nome", usuario.getNome());
-
-
             
-            
-                String mensagem = "Usuario "+usuario.getEmail() + " logado com sucesso!!";
+
+            String mensagem = "Usuario "+usuario.getEmail() + " logado com sucesso!!";
                 request.setAttribute("mensagem", mensagem);
                 request.setAttribute("class", "alert-success");
                 
             request.getRequestDispatcher("indexx.jsp").forward(request, response);
-            //session.setAttribute("fullname", "Marcos Luan");
+
             }
         } catch (Exception ex) {
             Logger.getLogger(UsuarioLoginServlet.class.getName()).log(Level.SEVERE, null, ex);
-        }
-            
+        }            
     }
 }
 

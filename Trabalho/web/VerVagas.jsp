@@ -8,35 +8,35 @@
 <%@include file="/cabecalho.jsp" %>
 <body>
     <h1>Vagas Disponíveis</h1>
-    <div id="div666">
-        <img src="../img/planta.jpg">
-        <p>.</p>
-        <p>.</p>
+    <div id="planta-baixa">
 
-        <p>.</p>
 
-        
-        <button  id="btn10" class="btn btn-success">Reservar</button>
-        <p>.</p>
-        <button id="btn11" class="btn btn-success">Reservar</button>
-        <p>.</p>
+        <button  id="btnres01" class="">Reservar</button>
 
-        <p>.</p>
-        <button id="btn12" class="btn btn-success">Reservar</button>
-                <p>.</p>
-        <p>.</p>
+        <button id="btnres02" class="btn btn-success">Reservar</button>
 
-        <p>.</p>        <p>.</p>
-        <p>.</p>
+        <button id="btnres03" class="btn btn-success">Reservar</button>
 
-        <p>.</p>        <p>.</p>
-        <p>.</p>
+        <button id="btnres04" class="btn btn-success">Reservar</button>
 
-        <p>.</p>        <p>.</p>
-        <p>.</p>
+        <button id="btnres05" >Reservar</button>
 
+        <button id="btnres06" class="btn btn-success">Reservar</button>
         <p>.</p>
-               <p>.</p>
-
-    </div>
+        <button id="btnres07" class="btn btn-success">Reservar</button>
+        <p>.</p>
+        <button id="btnres08" class="btn btn-success">Reservar</button>
+        <p>.</p>
+        <button id="btnres09" class="btn btn-success">Reservar</button>
+        <p>.</p>
+        <button id="btnres10" class="btn btn-success">Reservar</button>
+        <p>.</p>
+        <button id="btnres11" class="btn btn-success">Reservar</button>
+        <p>.</p>
+        <button id="btnres12" class="btn btn-success">Reservar</button>
+        <p>.</p>
+        <button id="btnres13" class="btn btn-success">Reservar</button>
+        <p>.</p>
+        <button id="btnres14" class="btn btn-success">Reservar</button>
+    </div>  
     <%@include file="/rodape.jsp" %>

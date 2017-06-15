@@ -43,12 +43,7 @@ public class VerificacaoServlet extends HttpServlet {
                 response.setContentType("text/plain");
                 response.getWriter().write("<a href='login.jsp'>Login</a>");
             }
-                
-            }
-            
-            //request.getRequestDispatcher("indexx.jsp").forward(request, response);
-         
-
+        }
     }
 
 

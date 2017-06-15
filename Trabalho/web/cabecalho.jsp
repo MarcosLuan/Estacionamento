@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -41,9 +42,9 @@ and open the template in the editor.
               <li class="active"><a href="indexx.jsp">Home</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vagas<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Verificar vagas</a></li>
-                  <li><a href="#">Reservar vaga</a></li>
+                <ul id="vagas" class="dropdown-menu">
+                  <li><a href="VerVagas.jsp">Verificar vagas</a></li>
+                  <li><a href="#">XXXXXXXXXXXX</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Nav header</li>
                   <li><a href="#">Verificar histórico de reservas</a></li>
@@ -52,7 +53,7 @@ and open the template in the editor.
               
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pagamento <span class="caret"></span></a>
-                <ul class="dropdown-menu">
+                <ul id="pagam" class="dropdown-menu">
                   <li><a href="Pagamento.html">Registrar saída e efetuar pagamento</a></li>
                   <li><a href="#">XXXXXXXXXXXXXXXX</a></li>
                   <li role="separator" class="divider"></li>
@@ -71,3 +72,8 @@ and open the template in the editor.
         </div><!--/.container-fluid -->
 
       </nav>
+      
+<%--<script type="text/javascript">
+    document.getElementById("vagas").style.display = "none";
+    document.getElementById("pagam").style.display = "none";
+</script>--%>

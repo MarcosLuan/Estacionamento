@@ -21,9 +21,9 @@ $(document).ready(function () {
         //$('#div1').text("Testando o JQuery"); //Exemplo
     });
     
-    $('#btn10').on('click', function() {
+    $('#btnres01').on('click', function() {
         
-        var botao = $('#btn10');
+        var botao = $('#btnres01');
         botao.text('Ocupado');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
@@ -34,7 +34,7 @@ $(document).ready(function () {
            type:'POST',       //é o método GET
            
            success: function(response){//retorna uma resposta
-                $('#btn10').text('Ocupado '+response);
+                $('#btn01').text('Ocupado '+response);
            }
         });
         
