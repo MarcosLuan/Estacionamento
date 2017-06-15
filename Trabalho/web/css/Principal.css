@@ -32,3 +32,8 @@
     font-size: 15px;
     font-weight: bold;
 }
+#planta-baixa{
+    background-image: url('../img/planta.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
