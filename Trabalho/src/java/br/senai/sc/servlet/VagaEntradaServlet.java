@@ -45,7 +45,7 @@ public class VagaEntradaServlet extends HttpServlet {
         }
         
                 response.setContentType("text/plain");
-                response.getWriter().write((String) placa);
+                response.getWriter().write(placa);
         
         
         

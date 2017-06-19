@@ -52,6 +52,27 @@ public class UsuarioDAO {
        }
         return null;
     }
+    public Usuario BuscarUsuariobyEmail(String email) throws Exception{
+        String sql = "select * from usuario where email = '" + email + "'";
+        java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
+        ResultSet rs = sqlPrep.executeQuery();
+        
+       if( rs.first()){
+
+        Usuario usuario = new Usuario(rs.getString("nome"),
+                rs.getString("email"),
+                rs.getString("senha"),
+                rs.getString("placacar"),
+                rs.getString("modelocar"));
+        
+
+        
+        return usuario;
+       
+       }
+        return null;
+        
+    }
 }
 
 

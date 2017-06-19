@@ -8,7 +8,7 @@
 <%@include file="/cabecalho.jsp" %>
 
 <h1>Cadastrar Usuario</h1>
-<form action="UsuarioServlet" method="POST">
+<form action="UsuarioAtuazarServlet" method="POST">
 
     <label for="nome">Nome: </label><br>
     <input type="text" class="form-control"  id="nome" name="nome" autofocus required />

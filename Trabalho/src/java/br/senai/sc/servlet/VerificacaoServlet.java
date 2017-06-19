@@ -37,8 +37,10 @@ public class VerificacaoServlet extends HttpServlet {
                 
                 Object user = session.getAttribute("user");
                 response.setContentType("text/plain");
-                response.getWriter().write((String) user);
-                response.getWriter().write("<a href='UsuarioDeslogaServlet'>deslogar</a>");
+                response.getWriter().write("<li>"+(String) user+ "</li>");
+                response.getWriter().write("<li><a href='UsuarioBuscaServlet'>Atualizar dados</a></li>");
+                response.getWriter().write("<li role='separator' class='divider'></li>");
+                response.getWriter().write("<li><a href='UsuarioDeslogaServlet'>deslogar</a></li>");
             }else{
                 response.setContentType("text/plain");
                 response.getWriter().write("<a href='login.jsp'>Login</a>");

@@ -6,6 +6,7 @@
 package br.senai.sc.servlet;
 
 import br.senai.sc.DAO.UsuarioDAO;
+import br.senai.sc.entity.Usuario;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -19,9 +20,11 @@ import javax.servlet.http.HttpSession;
  *
  * @author andersonfrare
  */
-@WebServlet(name = "UsurioAtualizarServlet", urlPatterns = {"/UsurioAtualizarServlet"})
-public class UsurioAtualizarServlet extends HttpServlet {
+@WebServlet(name = "UsuarioBuscaServlet", urlPatterns = {"/UsuarioBuscaServlet"})
+public class UsuarioBuscaServlet extends HttpServlet {
 
+
+    
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -40,12 +43,15 @@ public class UsurioAtualizarServlet extends HttpServlet {
 
         UsuarioDAO uDAO = new UsuarioDAO();
         try {
-            uDAO.BuscarUsuariobyEmail(email);
+            Usuario usuario = uDAO.BuscarUsuariobyEmail(email);
+            request.setAttribute("usuario", usuario);
+            
+        request.getRequestDispatcher("atualizarUsuario.jsp").forward(request, response);
 
         } catch (Exception ex) {
             System.out.println("Erro: " + ex);
         }
-
+        
     }
 
 }

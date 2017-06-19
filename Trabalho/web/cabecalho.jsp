@@ -65,8 +65,15 @@ and open the template in the editor.
             </ul>
             <ul class="nav navbar-nav navbar-right">
               
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuário <span class="caret"></span></a>
+                <ul id="Login" class="dropdown-menu">
+                  
+                  
+                </ul>
+              </li>
               
-              <li id="Login"></li>
+              
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->

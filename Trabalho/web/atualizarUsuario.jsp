@@ -1,18 +1,29 @@
 <%-- 
-    Document   : atualizarUsuario
-    Created on : 07/06/2017, 19:35:37
-    Author     : andersonfrare
+    Document   : CadastroUsuario
+    Created on : 07/06/2017, 21:13:06
+    Author     : Marcos_Laís
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="/Cabecalho.html" %>
+<%@include file="/cabecalho.jsp" %>
 
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<h1>Atualizar Dados</h1>
+<form action="Usuario" method="POST">
+
+    <label for="nome">Nome: </label><br>
+    <input type="text" class="form-control"  id="nome" name="nome" value="${usuario.nome}"    autofocus required />
+
+    <br>
+    <label for="senha">Senha: </label><br>
+    <input type="password" class="form-control" id="senha" name="senha" placeholder="senha com 6 números" value="${usuario.senha}" required/>
+    <br>
+    <label for="placacar">Placa do Carro: </label><br>
+    <input type="text" class="form-control" id="placacar" name="placacar" value ="${usuario.placacar}" required/>
+    <br>
+    <label for="modelocar">Modelo do Carro: </label><br>
+    <input type="text" class="form-control" id="modelocar" name="modelocar" value ="${usuario.modelocar}"required/>
+    <br>
+    <br>
+    <input type="submit" class="btn btn-primary" value="Atualizar" />
+</form>
+<%@include file="/rodape.jsp" %>

@@ -24,7 +24,7 @@ $(document).ready(function () {
     $('#btnres01').on('click', function() {
         
         var botao = $('#btnres01');
-        botao.text('Ocupado');
+        //botao.text('Ocupado');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -34,7 +34,7 @@ $(document).ready(function () {
            type:'POST',       //é o método GET
            
            success: function(response){//retorna uma resposta
-                $('#btn01').text('Ocupado '+response);
+                $('#btnres01').text('Ocupado '+response);
            }
         });
         
