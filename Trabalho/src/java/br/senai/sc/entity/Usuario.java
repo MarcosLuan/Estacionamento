@@ -31,6 +31,13 @@ public class Usuario {
         this.modelocar = modelocar;
     }
 
+    public Usuario(String nome, String senha, String placacar, String modelocar) {
+        this.nome = nome;
+        this.senha = senha;
+        this.placacar = placacar;
+        this.modelocar = modelocar;
+    }
+
     public String getNome() {
         return nome;
     }

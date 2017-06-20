@@ -8,7 +8,8 @@
 <%@include file="/cabecalho.jsp" %>
 
 <h1>Atualizar Dados</h1>
-<form action="Usuario" method="POST">
+<form action="UsuarioAtualizarServlet" method="POST">
+     <input type="hidden" name="email" value="${usuario.email}">
 
     <label for="nome">Nome: </label><br>
     <input type="text" class="form-control"  id="nome" name="nome" value="${usuario.nome}"    autofocus required />

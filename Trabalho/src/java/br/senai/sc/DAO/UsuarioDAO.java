@@ -73,6 +73,22 @@ public class UsuarioDAO {
         return null;
         
     }
+public void update(Usuario usuario) throws Exception{
+        
+        String sql = "UPDATE `Estacionamento`.`Usuario`"
+       +"SET `nome` = '"+usuario.getNome()+"',"
+        +"`senha` ='" + usuario.getSenha() + "',"
++ "`placacar` = '" + usuario.getPlacacar() +"' ,"
++ "`modelocar` = ' " + usuario.getModelocar() + "'"
++ "WHERE `email` ='"+ usuario.getEmail()+ "' " ;
+
+        java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);        
+        
+        System.out.println(sqlPrep);
+        
+        sqlPrep.execute();
+      }
+   
 }
 
 

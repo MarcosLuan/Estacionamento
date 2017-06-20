@@ -44,6 +44,7 @@ public class UsuarioBuscaServlet extends HttpServlet {
         UsuarioDAO uDAO = new UsuarioDAO();
         try {
             Usuario usuario = uDAO.BuscarUsuariobyEmail(email);
+            
             request.setAttribute("usuario", usuario);
             
         request.getRequestDispatcher("atualizarUsuario.jsp").forward(request, response);

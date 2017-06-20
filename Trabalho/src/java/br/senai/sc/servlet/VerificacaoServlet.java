@@ -35,12 +35,19 @@ public class VerificacaoServlet extends HttpServlet {
         
             if(session.getAttribute("user") != null){
                 
-                Object user = session.getAttribute("user");
+                String user = (String) session.getAttribute("user");
+                String nome = (String) session.getAttribute("nome");
                 response.setContentType("text/plain");
-                response.getWriter().write("<li>"+(String) user+ "</li>");
+                response.getWriter().write("<li class='dropdown'>");
+                response.getWriter().write("<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>"+nome+" <span class='caret'></span></a>"); 
+                response.getWriter().write("<ul  class='dropdown-menu'>");
+                response.getWriter().write("<li>"+ user+ "</li>");
                 response.getWriter().write("<li><a href='UsuarioBuscaServlet'>Atualizar dados</a></li>");
                 response.getWriter().write("<li role='separator' class='divider'></li>");
                 response.getWriter().write("<li><a href='UsuarioDeslogaServlet'>deslogar</a></li>");
+                
+                response.getWriter().write("</ul>");
+                response.getWriter().write("</li>");
             }else{
                 response.setContentType("text/plain");
                 response.getWriter().write("<a href='login.jsp'>Login</a>");

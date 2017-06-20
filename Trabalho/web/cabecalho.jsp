@@ -51,7 +51,7 @@ and open the template in the editor.
                 </ul>
               </li>
               
-              <li class="dropdown">
+              <li  class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pagamento <span class="caret"></span></a>
                 <ul id="pagam" class="dropdown-menu">
                   <li><a href="Pagamento.html">Registrar saída e efetuar pagamento</a></li>
@@ -63,15 +63,13 @@ and open the template in the editor.
                 </ul>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+              <ul id="Login" class="nav navbar-nav navbar-right">
               
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuário <span class="caret"></span></a>
-                <ul id="Login" class="dropdown-menu">
+              
+                
                   
                   
-                </ul>
-              </li>
+                
               
               
             </ul>
@@ -80,7 +78,7 @@ and open the template in the editor.
 
       </nav>
       
-<%--<script type="text/javascript">
+<%--script type="text/javascript">
     document.getElementById("vagas").style.display = "none";
     document.getElementById("pagam").style.display = "none";
-</script>--%>
+</script--%>
