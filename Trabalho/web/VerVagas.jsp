@@ -13,33 +13,33 @@
             <div id="planta-baixa">
 
                 <p>.</p>
-                <button id="btnres01" class="btn btn-success">Reservar</button>
+                <button id="btnres01" class="btn btn-sm btn-success">Reservar</button>
 
-                <button id="btnres02" class="btn btn-success">Reservar</button>
+                <button id="btnres02" class="btn btn-sm btn-success">Reservar</button>
 
-                <button id="btnres03" class="btn btn-success">Reservar</button>
+                <button id="btnres03" class="btn btn-sm btn-success">Reservar</button>
 
-                <button id="btnres04" class="btn btn-success">Reservar</button>
+                <button id="btnres04" class="btn btn-sm btn-success">Reservar</button>
 
-                <button id="btnres05" class="btn btn-success">Reservar</button>
+                <button id="btnres05" class="btn btn-sm btn-success">Reservar</button>
 
-                <button id="btnres06" class="btn btn-success">Reservar</button>
+                <button id="btnres06" class="btn btn-sm btn-success">Reservar</button>
                 
-                <button id="btnres07" class="btn btn-success">Reservar</button>
+                <button id="btnres07" class="btn btn-sm btn-success">Reservar</button>
                 
-                <button id="btnres08" class="btn btn-success">Reservar</button>
+                <button id="btnres08" class="btn btn-sm btn-success">Reservar</button>
                 
-                <button id="btnres09" class="btn btn-success">Reservar</button>
+                <button id="btnres09" class="btn btn-sm btn-success">Reservar</button>
                 
-                <button id="btnres10" class="btn btn-success">Reservar</button>
+                <button id="btnres10" class="btn btn-sm btn-success">Reservar</button>
                 
-                <button id="btnres11" class="btn btn-success">Reservar</button>
+                <button id="btnres11" class="btn btn-sm btn-success">Reservar</button>
                 
-                <button id="btnres12" class="btn btn-success">Reservar</button>
+                <button id="btnres12" class="btn btn-sm btn-success">Reservar</button>
                 
-                <button id="btnres13" class="btn btn-success">Reservar</button>
+                <button id="btnres13" class="btn btn-sm btn-success">Reservar</button>
                 
-                <button id="btnres14" class="btn btn-success">Reservar</button>
+                <button id="btnres14" class="btn btn-sm btn-success">Reservar</button>
                 <p>.</p>
             </div>  
         </div>
