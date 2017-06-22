@@ -12,6 +12,8 @@ $(document).ready(function () {
                 senha: $('#senha').val()
             },
             success: function (response) {//retorna uma resposta
+                $('#pagam').css('display','block');
+                $('#vagas').css('display','block');
                 $('#Login').append(response);
                 
             }

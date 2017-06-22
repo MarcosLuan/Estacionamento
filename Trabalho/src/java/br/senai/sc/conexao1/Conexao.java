@@ -17,7 +17,7 @@ public class Conexao {
             throws Exception{
         Class.forName("com.mysql.jdbc.Driver");
         
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Estacionamento","root","Au7t9@rC");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Estacionamento","root","123");
 
         
         return con;

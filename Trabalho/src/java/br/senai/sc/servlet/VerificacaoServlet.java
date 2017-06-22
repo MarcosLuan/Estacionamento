@@ -37,6 +37,8 @@ public class VerificacaoServlet extends HttpServlet {
                 
                 String user = (String) session.getAttribute("user");
                 String nome = (String) session.getAttribute("nome");
+                
+
                 response.setContentType("text/plain");
                 response.getWriter().write("<li class='dropdown'>");
                 response.getWriter().write("<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>"+nome+" <span class='caret'></span></a>"); 
