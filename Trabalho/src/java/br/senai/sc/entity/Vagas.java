@@ -16,7 +16,16 @@ public class Vagas {
     private String VNome;
     private String VHentrada;
     private String VHsaida;
+
+    public int getVreservada() {
+        return Vreservada;
+    }
+
+    public void setVreservada(int Vreservada) {
+        this.Vreservada = Vreservada;
+    }
     private int tempo;
+    private int Vreservada;
     
     public Vagas() {
     }
@@ -26,14 +35,16 @@ public class Vagas {
         this.VNome = VNome;
     }
 
-    
-    public Vagas    (String VPlaca, String VNome, String VHentrada, String VHsaida, int tempo) {
+    public Vagas(String VPlaca, String VNome, String VHentrada, String VHsaida, int tempo, int Vreservada) {
         this.VPlaca = VPlaca;
         this.VNome = VNome;
         this.VHentrada = VHentrada;
         this.VHsaida = VHsaida;
         this.tempo = tempo;
+        this.Vreservada = Vreservada;
     }
+
+    
     
 
     public String getVHentrada() {
