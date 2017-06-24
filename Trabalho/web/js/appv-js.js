@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
     
     $('#btnres01').on('click', function() {
-        
+        console.log(this.id);
         var botao = $('#btnres01');
         //botao.text('Ocupado');
         botao.removeClass('btn-success');
@@ -32,7 +32,10 @@ $(document).ready(function () {
         
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
-           type:'POST',       //é o método GET
+           type:'POST',
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres01').text('Ocupado '+response);

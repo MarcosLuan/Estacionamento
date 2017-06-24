@@ -16,11 +16,13 @@ import java.sql.ResultSet;
 public class VagasDAO {
     
     public void insert(Vagas vagas) throws Exception{
-        String sql = "insert into vagas(VPlaca,VNome,VHentrada) values (?,?, current_timestamp)";
+        String sql = "insert into vagas(VPlaca,VNome,VHentrada,Vreservada) values (?,?, current_timestamp,?)";
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
         
         sqlPrep.setString(1,vagas.getVPlaca());
         sqlPrep.setString(2,vagas.getVNome());
+        sqlPrep.setString(3,vagas.getVreservada());
+
         
         sqlPrep.execute();
 
@@ -50,7 +52,8 @@ public class VagasDAO {
                       rs.getString("VNome"),
                       rs.getString("VHentrada"),
                       rs.getString("VHsaida"),
-                      rs.getInt("tempo"));
+                      rs.getInt("tempo"),
+                      rs.getString("Vreservada"));
         return vaga;
     }   
 }

@@ -31,9 +31,11 @@ public class VagaEntradaServlet extends HttpServlet {
         
                 String placa = (String) session.getAttribute("placa");
                 String nome = (String) session.getAttribute("nome");
+                String Vreservada = request.getParameter("Vreservada");
+                
 
                 
-                Vagas vagas = new Vagas(placa,nome);
+                Vagas vagas = new Vagas(placa,nome,Vreservada);
         VagasDAO vDAO = new VagasDAO();
         
         try{
