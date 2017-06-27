@@ -12,11 +12,15 @@ package br.senai.sc.entity;
 public class Reservas {
     private String Rcod;
     private int Rocupada;
+    private String Rplaca;
 
-    public Reservas(String Rcod, int Rocupada) {
+    public Reservas(String Rcod, int Rocupada, String Rplaca) {
         this.Rcod = Rcod;
         this.Rocupada = Rocupada;
+        this.Rplaca = Rplaca;
     }
+
+    
 
     public String getRcod() {
         return Rcod;
@@ -33,6 +37,15 @@ public class Reservas {
     public void setRocupada(int Rocupada) {
         this.Rocupada = Rocupada;
     }
+
+    public String getRplaca() {
+        return Rplaca;
+    }
+
+    public void setRplaca(String Rplaca) {
+        this.Rplaca = Rplaca;
+    }
+    
 
     
 }

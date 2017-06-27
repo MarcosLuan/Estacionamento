@@ -18,11 +18,13 @@ public class ReservarDAO {
 
     public void insert(Reservas reserva) throws Exception {
 
-        String sql = "insert into Reservas (Rcod,Rocupada) values(?,?)";
+        String sql = "insert into Reservas (Rcod,Rocupada,Rplaca) values(?,?,?)";
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
 
         sqlPrep.setString(1, reserva.getRcod());
         sqlPrep.setInt(2, reserva.getRocupada());
+        sqlPrep.setString(3, reserva.getRplaca());
+
 
         sqlPrep.execute();
 
@@ -31,7 +33,8 @@ public class ReservarDAO {
     public void update(Reservas reserva) throws Exception {
 
         String sql = "UPDATE `Estacionamento`.`Reservas`"
-                + "SET `Rocupada` = " + reserva.getRocupada()
+                + "SET `Rocupada` = " + reserva.getRocupada()+", "
+                + "`Rplaca` = '" + reserva.getRplaca()+"'"
                 + " WHERE `Rcod` ='" + reserva.getRcod() + "' ";
 
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
@@ -48,7 +51,8 @@ public class ReservarDAO {
        if( rs.first()){
 
         Reservas reserva = new Reservas(rs.getString("Rcod"),
-                rs.getInt("Rocupada")
+                rs.getInt("Rocupada"),
+                rs.getString("Rplaca")
                 );
         
 

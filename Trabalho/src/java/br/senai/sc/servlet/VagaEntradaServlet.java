@@ -40,7 +40,7 @@ public class VagaEntradaServlet extends HttpServlet {
                 
                 Vagas vagas = new Vagas(placa,nome,Vreservada);
                 request.setAttribute("vagas", vagas);
-                Reservas reserva = new Reservas(Vreservada,1);
+                Reservas reserva = new Reservas(Vreservada,1,placa);
                 
         VagasDAO vDAO = new VagasDAO();
         ReservarDAO rDAO = new ReservarDAO();  

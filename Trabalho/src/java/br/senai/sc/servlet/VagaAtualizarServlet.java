@@ -57,7 +57,7 @@ public class VagaAtualizarServlet extends HttpServlet {
                     if (reserva.getRocupada() == 1) {
                         String classBotao = "btn-danger";
                         request.setAttribute("classBotao" + i, classBotao);
-                        request.setAttribute("btnres0" + i, botao);
+                        request.setAttribute("btnres0" + i, "Ocupada "+reserva.getRplaca());
 
                     } else {
                         String classBotao = "btn-success";
@@ -73,7 +73,7 @@ public class VagaAtualizarServlet extends HttpServlet {
                     if (reserva.getRocupada() == 1) {
                         String classBotao = "btn-danger";
                         request.setAttribute("classBotao" + i, classBotao);
-                        request.setAttribute("btnres" + i, botao);
+                        request.setAttribute("btnres" + i,"Ocupada "+reserva.getRplaca());
 
                     } else {
                         String classBotao = "btn-success";
