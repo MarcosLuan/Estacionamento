@@ -5,7 +5,9 @@
  */
 package br.senai.sc.servlet;
 
+import br.senai.sc.DAO.ReservarDAO;
 import br.senai.sc.DAO.VagasDAO;
+import br.senai.sc.entity.Reservas;
 import br.senai.sc.entity.Vagas;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,13 +35,20 @@ public class VagaEntradaServlet extends HttpServlet {
                 String nome = (String) session.getAttribute("nome");
                 String Vreservada = request.getParameter("Vreservada");
                 
+                
 
                 
                 Vagas vagas = new Vagas(placa,nome,Vreservada);
+                request.setAttribute("vagas", vagas);
+                Reservas reserva = new Reservas(Vreservada,1);
+                
         VagasDAO vDAO = new VagasDAO();
+        ReservarDAO rDAO = new ReservarDAO();  
         
         try{
             vDAO.insert(vagas);
+            //rDAO.insert(reserva);
+            rDAO.update(reserva);
             
             
         } catch (Exception ex) {

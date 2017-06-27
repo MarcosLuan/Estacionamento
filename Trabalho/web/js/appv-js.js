@@ -26,7 +26,7 @@ $(document).ready(function () {
         console.log(this.id);
         var botao = $('#btnres01');
         //botao.text('Ocupado');
-        botao.removeClass('btn-success');
+        
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
         
@@ -44,16 +44,19 @@ $(document).ready(function () {
     });
         
         $('#btnres02').on('click', function() {
-        
+        console.log(this.id);
         var botao = $('#btnres02');
         //botao.text('Ocupado');
-        botao.removeClass('btn-success');
+        
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
         
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
-           type:'POST',       //é o método GET
+           type:'POST',
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres02').text('Ocupado '+response);
@@ -72,6 +75,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres03').text('Ocupado '+response);
@@ -90,6 +96,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres04').text('Ocupado '+response);
@@ -108,6 +117,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres05').text('Ocupado '+response);
@@ -126,6 +138,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres06').text('Ocupado '+response);
@@ -144,6 +159,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres07').text('Ocupado '+response);
@@ -162,6 +180,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres08').text('Ocupado '+response);
@@ -180,6 +201,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres09').text('Ocupado '+response);
@@ -198,6 +222,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres10').text('Ocupado '+response);
@@ -216,6 +243,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres11').text('Ocupado '+response);
@@ -234,6 +264,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres12').text('Ocupado '+response);
@@ -252,6 +285,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres13').text('Ocupado '+response);
@@ -270,6 +306,9 @@ $(document).ready(function () {
         $.ajax({
            url:'VagaEntradaServlet',//é o servelt
            type:'POST',       //é o método GET
+           data:{
+               Vreservada: this.id
+           },
            
            success: function(response){//retorna uma resposta
                 $('#btnres14').text('Ocupado '+response);
