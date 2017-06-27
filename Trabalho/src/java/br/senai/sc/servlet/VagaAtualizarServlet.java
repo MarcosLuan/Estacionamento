@@ -5,8 +5,12 @@
  */
 package br.senai.sc.servlet;
 
+import br.senai.sc.DAO.ReservarDAO;
+import br.senai.sc.entity.Reservas;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,8 +33,6 @@ public class VagaAtualizarServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-
-
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -43,10 +45,53 @@ public class VagaAtualizarServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        if ()
-        
-    }
 
+        ReservarDAO rDAO = new ReservarDAO();
+        for (int i = 1; i < 15; i++) {
+            String botao = "btnres0" + i;
+            System.out.println("botao: " + botao);
+            try {
+                if (i < 10) {
+                Reservas reserva = rDAO.BuscarReservasbyCodigo(botao);
+                
+                    if (reserva.getRocupada() == 1) {
+                        String classBotao = "btn-danger";
+                        request.setAttribute("classBotao" + i, classBotao);
+                        request.setAttribute("btnres0" + i, botao);
+
+                    } else {
+                        String classBotao = "btn-success";
+                        String mensagem = "Reservar" + i;
+                        request.setAttribute("classBotao" + i, classBotao);
+                        request.setAttribute("btnres0" + i, mensagem);
+                    }
+                } else {// tira o 0
+                    
+                    botao = "btnres" + i;
+                    Reservas reserva = rDAO.BuscarReservasbyCodigo(botao);
+                    
+                    if (reserva.getRocupada() == 1) {
+                        String classBotao = "btn-danger";
+                        request.setAttribute("classBotao" + i, classBotao);
+                        request.setAttribute("btnres" + i, botao);
+
+                    } else {
+                        String classBotao = "btn-success";
+                        String mensagem = "Reservar" + i;
+                        request.setAttribute("classBotao" + i, classBotao);
+                        request.setAttribute("btnres" + i, mensagem);
+
+                    }
+
+                }
+
+            } catch (Exception ex) {
+                Logger.getLogger(VagaAtualizarServlet.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        }
+        request.getRequestDispatcher("VerVagas.jsp").forward(request, response);
+
+    }
 
 }

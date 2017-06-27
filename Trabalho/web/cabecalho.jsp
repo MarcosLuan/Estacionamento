@@ -48,10 +48,9 @@ and open the template in the editor.
                             out.print("<li id='vagas' class='dropdown'>"
                                 + " <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Vagas<span class='caret'></span></a>"
                                 +" <ul  class='dropdown-menu'>"
-                                 + "   <li><a href='VerVagas.jsp'>Verificar vagas</a></li>"
-                                  +"  <li><a href='#'>XXXXXXXXXXXX</a></li>"
+                                 + "   <li><a href='VagaAtualizarServlet'>Verificar vagas</a></li>"
                                    + " <li role='separator' class='divider'></li>"
-                                   + " <li class='dropdown-header'>Nav header</li>"
+                                   + " <li class='dropdown-header'>Historico</li>"
                                     + "<li><a href='#'>Verificar histórico de reservas</a></li>" 
                                + " </ul>"
                             + "</li>");

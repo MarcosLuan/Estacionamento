@@ -8,6 +8,7 @@ package br.senai.sc.DAO;
 import br.senai.sc.conexao1.Conexao;
 import br.senai.sc.entity.Reservas;
 import br.senai.sc.entity.Usuario;
+import java.sql.ResultSet;
 
 /**
  *
@@ -17,7 +18,7 @@ public class ReservarDAO {
 
     public void insert(Reservas reserva) throws Exception {
 
-        String sql = "insert into Reservas (Rcod,Rocupada) values(?,?);
+        String sql = "insert into Reservas (Rcod,Rocupada) values(?,?)";
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
 
         sqlPrep.setString(1, reserva.getRcod());
@@ -39,9 +40,28 @@ public class ReservarDAO {
 
         sqlPrep.execute();
     }
+    public Reservas BuscarReservasbyCodigo(String Rcod ) throws Exception{
+        String sql = "select * from Reservas where  Rcod= '" + Rcod + "'";
+        java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
+        ResultSet rs = sqlPrep.executeQuery();
+        
+       if( rs.first()){
+
+        Reservas reserva = new Reservas(rs.getString("Rcod"),
+                rs.getInt("Rocupada")
+                );
+        
+
+        
+        return reserva;
+       
+       }
+          return null;
+        
+    }
     
     public void verificarTamanho(){
-        String sql = "SUM()"
+        String sql = "SUM()";
     }
 
 }
