@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+<%-- 
+    Document   : telaPagamento
+    Created on : 27/06/2017, 11:04:44
+    Author     : andersonfrare
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@include file="/cabecalho.jsp" %>
         <h1>Tela para Pagamento</h1>
         <form action="VagasSaidaServlet" method="POST">
            <!--<h2>O valor para pagamento é: <text type="" value="VHsaida * 0.05"></h2><br>-->  
@@ -20,11 +14,12 @@ and open the template in the editor.
             <br>
             <br>
             <label for="nome">Placa: </label><br>
-            <input type="text" id="placa" name="placa"/>
+            <input type="text" id="placa" name="placa" value="<%String placa = (String) session.getAttribute("placa");
+                   out.print(placa);%>"/>
             <br>
             <br>
             <input type="submit" value="OK"/>
             <br><br><a href='indexx.jsp'>voltar</a>
         </form>
-    </body>
-</html>
+ <%@include file="/rodape.jsp" %>
+

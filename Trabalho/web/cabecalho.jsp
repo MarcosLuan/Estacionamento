@@ -44,17 +44,7 @@ and open the template in the editor.
                                                         <%
                             //verifica se a sessao do usuario é válida
                             if (session.getAttribute("user") != null){
-                            out.print("<li  id='pagam' class='dropdown'>"
-                                + "<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Pagamento <span class='caret'></span></a>"
-                                + "<ul  class='dropdown-menu'>"
-                                  + "  <li><a href='Pagamento.html'>Registrar saída e efetuar pagamento</a></li>"
-                                   + " <li><a href='#'>XXXXXXXXXXXXXXXX</a></li>"
-                                   + " <li role='separator' class='divider'></li>"
-                                   + " <li class='dropdown-header'>Nav header</li>"
-                                    + "<li><a href='#'>Verificar histórico de pagamentos</a></li>"
-                                    + "<li><a href='#'>Configurações de pagamento</a></li>"
-                               +" </ul>"
-                            +" </li>");  
+                              
                             out.print("<li id='vagas' class='dropdown'>"
                                 + " <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Vagas<span class='caret'></span></a>"
                                 +" <ul  class='dropdown-menu'>"
@@ -65,6 +55,16 @@ and open the template in the editor.
                                     + "<li><a href='#'>Verificar histórico de reservas</a></li>" 
                                + " </ul>"
                             + "</li>");
+                            out.print("<li  id='pagam' class='dropdown'>"
+                                + "<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Pagamento <span class='caret'></span></a>"
+                                + "<ul  class='dropdown-menu'>"
+                                  + "  <li><a href='telaPagamento.jsp'>Registrar saída e efetuar pagamento</a></li>" 
+                                  + " <li role='separator' class='divider'></li>"
+                                   + " <li class='dropdown-header'>Outras opcoes</li>"
+                                    + "<li><a href='#'>Verificar histórico de pagamentos</a></li>"
+                                    + "<li><a href='#'>Configurações de pagamento</a></li>"
+                               +" </ul>"
+                            +" </li>");
                             
 
                             }
