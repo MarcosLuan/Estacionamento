@@ -9,6 +9,7 @@ $(document).ready(function () {
     //alert("JS funcionando legal!!!");//Exemplo
     $('#btn1').click(function (){
         
+        
         $.ajax({
            url:'VagasSaidaServlet',//é o servelt
            type:'GET',       //é o método GET
@@ -21,8 +22,12 @@ $(document).ready(function () {
         
         //$('#div1').text("Testando o JQuery"); //Exemplo
     });
+    $('.btn').on('click',function(){ // Abre modal
+        $('#modalVaga').modal('show');
+    });
     
     $('#btnres01').on('click', function() {
+        
         console.log(this.id);
         var botao = $('#btnres01');
         //botao.text('Ocupado');

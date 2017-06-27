@@ -5,7 +5,9 @@
  */
 package br.senai.sc.servlet;
 
+import br.senai.sc.DAO.ReservarDAO;
 import br.senai.sc.DAO.VagasDAO;
+import br.senai.sc.entity.Reservas;
 import br.senai.sc.entity.Vagas;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -41,6 +43,7 @@ public class VagasSaidaServlet extends HttpServlet {
 
        String placa = request.getParameter("placa");
         VagasDAO vDAO = new VagasDAO();
+        ReservarDAO rDAO = new ReservarDAO();
         
         
         try {
@@ -48,6 +51,12 @@ public class VagasSaidaServlet extends HttpServlet {
             Vagas vaga = vDAO.buscarById(placa);
             double valor = vaga.calcularValorPagamento();
             request.setAttribute("valor", valor);
+            
+            vaga.setVHcusto(valor);
+            vDAO.updateCusto(vaga);//Atualiza custo
+            Reservas reserva = new Reservas(vaga.getVreservada(),0,placa);
+            rDAO.update(reserva);// Desocupa Vaga
+            
             request.getRequestDispatcher("pagamento.jsp").forward(request, response);
             
         response.setContentType("text/plain");

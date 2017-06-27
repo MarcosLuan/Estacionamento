@@ -9,6 +9,7 @@ import br.senai.sc.conexao1.Conexao;
 import br.senai.sc.entity.Reservas;
 import br.senai.sc.entity.Usuario;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  *
@@ -64,8 +65,21 @@ public class ReservarDAO {
         
     }
     
-    public void verificarTamanho(){
-        String sql = "SUM()";
+    public int verificarTamanho() throws SQLException, Exception{
+        String sql = "Select (SUM(Rocupada)) AS total from Reservas;";
+        java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
+        ResultSet rs = sqlPrep.executeQuery();
+        if( rs.first()){
+
+        
+            int totalReservas =rs.getInt("total");
+                    System.out.println(totalReservas);
+
+        
+        return totalReservas;
+       
+       }
+        return 0;
     }
 
 }

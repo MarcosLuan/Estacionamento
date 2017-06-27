@@ -55,5 +55,17 @@ public class VagasDAO {
                       rs.getInt("tempo"),
                       rs.getString("Vreservada"));
         return vaga;
-    }   
+    }
+public void updateCusto(Vagas vaga) throws Exception{
+      
+        String sql = "UPDATE vagas SET VHcusto= "+ vaga.getVHcusto()
+                + "  where VPlaca='" + vaga.getVPlaca()+"'";
+
+        java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);        
+        
+        System.out.println(sqlPrep);
+        
+        sqlPrep.execute();
+    
+}   
 }

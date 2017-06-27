@@ -16,6 +16,7 @@ public class Vagas {
     private String VNome;
     private String VHentrada;
     private String VHsaida;
+    private double VHcusto; 
 
     public String getVreservada() {
         return Vreservada;
@@ -89,6 +90,16 @@ public class Vagas {
     public void setVNome(String VNome) {
         this.VNome = VNome;
     }
+
+    public double getVHcusto() {
+        return VHcusto;
+    }
+
+    public void setVHcusto(double VHcusto) {
+        this.VHcusto = VHcusto;
+    }
+    
+    
 
     public double calcularValorPagamento() {
     

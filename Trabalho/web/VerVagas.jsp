@@ -8,11 +8,32 @@
 <%@include file="/cabecalho.jsp" %>
 
     <h1>Vagas Disponíveis</h1>
+    <!-- Modal -->
+  <div class="modal fade" id="modalVaga" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Mensagem</h4>
+        </div>
+        <div class="modal-body">
+          <p class="alert alert-success" >Vaga reservada!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     <div class="row">
         <div class="col-xs-12 ">
             <div id="planta-baixa">
 
                 <p>.</p>
+                
+  
                 
                 <button id="btnres01" class="btn btn-sm ${classBotao1}">${btnres01}</button>
 

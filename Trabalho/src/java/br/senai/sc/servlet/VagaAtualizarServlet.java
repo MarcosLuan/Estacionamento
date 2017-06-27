@@ -47,6 +47,15 @@ public class VagaAtualizarServlet extends HttpServlet {
             throws ServletException, IOException {
 
         ReservarDAO rDAO = new ReservarDAO();
+        try {
+            if(rDAO.verificarTamanho() >= 14){
+                request.getRequestDispatcher("cheio.jsp").forward(request, response);
+                
+                
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(VagaAtualizarServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
         for (int i = 1; i < 15; i++) {
             String botao = "btnres0" + i;
             System.out.println("botao: " + botao);
