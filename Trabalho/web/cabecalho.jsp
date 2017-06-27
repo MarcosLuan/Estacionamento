@@ -14,10 +14,11 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Estacionamento Online</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/Principal.css"/>
+        <link rel="SHORTCUT ICON" href="img/favicon.ico"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
