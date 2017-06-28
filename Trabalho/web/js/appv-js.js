@@ -25,6 +25,9 @@ $(document).ready(function () {
     $('.btn').on('click',function(){ // Abre modal
         $('#modalVaga').modal('show');
     });
+    $('.btn').on('click',function(){ // Abre modal
+        $('#modalSenha').modal('show');
+    });
     
     $('#btnres01').on('click', function() {
         
