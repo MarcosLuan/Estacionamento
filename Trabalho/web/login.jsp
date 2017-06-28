@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col-sm-offset-2 col-md-6 col-sm-6">
-                <input id="btnLogar" type="submit" class="btn btn-lg btn-primary btn-block" value="Logar" />
+                <input id="btnLogar" type="submit" class="btn btn-lg btn-primary btn-block btn-login" value="Logar" />
                 <a href="#">Esqueceu a senha?</a>
             </div>
         </form>
@@ -36,7 +36,7 @@
         <h3>Não é cadastrado?</h3>
         <div class="col-sm-offset-1 col-md-2 col-sm-2">
             <form action="CadastroUsuario.jsp" method="get">
-                <input class="btn btn-success" type="submit" value="Criar novo Usuario" />
+                <input class="btn btn-success btn-cadasto" type="submit" value="Criar novo Usuario" />
             </form>
         </div>
     </div>

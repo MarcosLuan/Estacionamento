@@ -122,3 +122,10 @@
     margin-left: 20px;
     display: block;
 }
+
+.btn-login{
+    background-color: #34495e;
+}
+.btn-cadasto{
+    background-color: #27ae60;
+}
