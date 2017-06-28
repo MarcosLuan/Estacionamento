@@ -11,12 +11,15 @@ package br.senai.sc.entity;
  * @author andersonfrare
  */
 public class Vagas {
+    
 
     private String VPlaca;
     private String VNome;
     private String VHentrada;
     private String VHsaida;
-    private double VHcusto; 
+    private double VHcusto;
+    private int tempo;
+    private String Vreservada;
 
     public String getVreservada() {
         return Vreservada;
@@ -25,8 +28,8 @@ public class Vagas {
     public void setVreservada(String Vreservada) {
         this.Vreservada = Vreservada;
     }
-    private int tempo;
-    private String  Vreservada;
+    
+    
     
     public Vagas() {
     }
@@ -45,6 +48,17 @@ public class Vagas {
         this.tempo = tempo;
         this.Vreservada = Vreservada;
     }
+
+    public Vagas(String VPlaca, String VNome, String VHentrada, String VHsaida, double VHcusto, int tempo, String Vreservada) {
+        this.VPlaca = VPlaca;
+        this.VNome = VNome;
+        this.VHentrada = VHentrada;
+        this.VHsaida = VHsaida;
+        this.VHcusto = VHcusto;
+        this.tempo = tempo;
+        this.Vreservada = Vreservada;
+    }
+    
 
     
     
@@ -98,6 +112,7 @@ public class Vagas {
     public void setVHcusto(double VHcusto) {
         this.VHcusto = VHcusto;
     }
+    
     
     
 

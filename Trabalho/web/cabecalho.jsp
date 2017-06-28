@@ -4,6 +4,7 @@
     Author     : andersonfrare
 --%>
 
+<%@page import="java.lang.String"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -44,6 +45,17 @@ and open the template in the editor.
                             
                                                         <%
                             //verifica se a sessao do usuario é válida
+                            if ("admin@admin.com".equals( (String) session.getAttribute("user") ) ){
+                                out.print("<li id='admin' class='dropdown'>"
+                                + " <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Admininstrador<span class='caret'></span></a>"
+                                +" <ul  class='dropdown-menu'>"
+                                 + "   <li><a href='VagaConsultaServlet'>Relatorios</a></li>"
+                                   + " <li role='separator' class='divider'></li>"
+                                   + " <li class='dropdown-header'>Historico</li>"
+                                    + "<li><a href='#'>configuracoes</a></li>" 
+                               + " </ul>"
+                            + "</li>");
+                            }
                             if (session.getAttribute("user") != null){
                               
                             out.print("<li id='vagas' class='dropdown'>"

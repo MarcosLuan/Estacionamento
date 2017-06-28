@@ -33,6 +33,7 @@ public class VerificacaoServlet extends HttpServlet {
         
         HttpSession session = request.getSession();
         
+        
             if(session.getAttribute("user") != null){
                 
                 String user = (String) session.getAttribute("user");
