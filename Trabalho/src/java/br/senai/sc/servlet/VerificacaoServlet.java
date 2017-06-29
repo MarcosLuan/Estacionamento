@@ -42,7 +42,7 @@ public class VerificacaoServlet extends HttpServlet {
 
                 response.setContentType("text/plain");
                 response.getWriter().write("<li class='dropdown'>");
-                response.getWriter().write("<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>"+nome+" <span class='caret'></span></a>"); 
+                response.getWriter().write("<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'><span class='glyphicon glyphicon-user'></span>&nbsp"+nome+" <span class='caret'></span></a>"); 
                 response.getWriter().write("<ul  class='dropdown-menu'>");
                 response.getWriter().write("<li>"+ user+ "</li>");
                 response.getWriter().write("<li><a href='UsuarioBuscaServlet'>Atualizar dados</a></li>");

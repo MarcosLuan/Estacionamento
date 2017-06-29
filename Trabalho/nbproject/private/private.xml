@@ -3,20 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/entity/Usuario.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VerificacaoServlet.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioLoginServlet.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioAtualizarServlet.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/DAO/VagasDAO.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/js/login-js.js</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioServlet.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/VerVagas.jsp</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/atualizarUsuario.jsp</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/cabecalho.jsp</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioBuscaServlet.java</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/CadastroUsuario.jsp</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/web/indexx.jsp</file>
-            <file>file:/Users/andersonfrare/Documents/Estacionamento/Trabalho/src/java/br/senai/sc/DAO/UsuarioDAO.java</file>
+            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/indexx.jsp</file>
+            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VagaEntradaServlet.java</file>
         </group>
     </open-files>
 </project-private>

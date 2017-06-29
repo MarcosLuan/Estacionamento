@@ -29,7 +29,7 @@ and open the template in the editor.
 
             <!-- Static navbar -->
             <nav class="navbar navbar-default">
-                <div class="container-fluid">
+                <div class="container-fluid nav-cabeca">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
@@ -41,7 +41,7 @@ and open the template in the editor.
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="indexx.jsp">Home</a></li>
+                            <li><a href="indexx.jsp"><span class = "glyphicon glyphicon-home"></span> Home</a></li>
                             
                                                         <%
                             //verifica se a sessao do usuario é válida
@@ -64,7 +64,7 @@ and open the template in the editor.
                                  + "   <li><a href='VagaAtualizarServlet'>Verificar vagas</a></li>"
                                    + " <li role='separator' class='divider'></li>"
                                    + " <li class='dropdown-header'>Historico</li>"
-                                    + "<li><a href='#'>Verificar histórico de reservas</a></li>" 
+                                    + "<li><a href='VagaConsUsuServlet'>Verificar histórico de reservas</a></li>" 
                                + " </ul>"
                             + "</li>");
                             out.print("<li  id='pagam' class='dropdown'>"

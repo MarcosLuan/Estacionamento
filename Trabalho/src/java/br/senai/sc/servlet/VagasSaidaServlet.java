@@ -10,7 +10,8 @@ import br.senai.sc.DAO.VagasDAO;
 import br.senai.sc.entity.Reservas;
 import br.senai.sc.entity.Vagas;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -50,6 +51,8 @@ public class VagasSaidaServlet extends HttpServlet {
             vDAO.update(placa);
             Vagas vaga = vDAO.buscarById(placa);
             double valor = vaga.calcularValorPagamento();
+            BigDecimal valor1 = new BigDecimal(valor).setScale(2, RoundingMode.HALF_EVEN);
+            valor = valor1.doubleValue();
             request.setAttribute("valor", valor);
             
             vaga.setVHcusto(valor);

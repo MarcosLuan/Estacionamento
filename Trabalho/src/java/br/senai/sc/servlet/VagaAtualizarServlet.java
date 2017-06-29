@@ -70,7 +70,7 @@ public class VagaAtualizarServlet extends HttpServlet {
 
                     } else {
                         String classBotao = "btn-success";
-                        String mensagem = "Reservar" + i;
+                        String mensagem = "Reservar " + i;
                         request.setAttribute("classBotao" + i, classBotao);
                         request.setAttribute("btnres0" + i, mensagem);
                     }
@@ -86,7 +86,7 @@ public class VagaAtualizarServlet extends HttpServlet {
 
                     } else {
                         String classBotao = "btn-success";
-                        String mensagem = "Reservar" + i;
+                        String mensagem = "Reservar " + i;
                         request.setAttribute("classBotao" + i, classBotao);
                         request.setAttribute("btnres" + i, mensagem);
 

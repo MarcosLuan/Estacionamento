@@ -6,6 +6,7 @@
 package br.senai.sc.DAO;
 
 import br.senai.sc.conexao1.Conexao;
+import br.senai.sc.entity.Usuario;
 import br.senai.sc.entity.Vagas;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -92,6 +93,31 @@ public class VagasDAO {
     private int tempo;*/
     
         while (rs.next()) {
+            list.add(new Vagas(rs.getString("VPlaca"),
+                    rs.getString("VNome"),
+                    rs.getString("VHentrada"),
+                    rs.getString("VHsaida"),
+                    rs.getDouble("VHcusto"),
+                    rs.getInt("tempo"),
+                    rs.getString("Vreservada")
+                    ));
+
+        }
+
+        //}
+        return list;
+
+    }
+    
+    public List getListUsu(Usuario usuario) throws Exception {
+
+        String sql = "select * from vagas where Vplaca= '" + usuario.getPlacacar()+"'";
+        java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
+        ResultSet rs = sqlPrep.executeQuery();
+
+        List<Vagas> list = new ArrayList<Vagas>();
+
+         while (rs.next()) {
             list.add(new Vagas(rs.getString("VPlaca"),
                     rs.getString("VNome"),
                     rs.getString("VHentrada"),
