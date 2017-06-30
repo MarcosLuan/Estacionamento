@@ -71,10 +71,7 @@ and open the template in the editor.
                                 + "<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Pagamento <span class='caret'></span></a>"
                                 + "<ul  class='dropdown-menu'>"
                                   + "  <li><a href='telaPagamento.jsp'>Registrar saída e efetuar pagamento</a></li>" 
-                                  + " <li role='separator' class='divider'></li>"
-                                   + " <li class='dropdown-header'>Outras opcoes</li>"
-                                    + "<li><a href='#'>Verificar histórico de pagamentos</a></li>"
-                                    + "<li><a href='#'>Configurações de pagamento</a></li>"
+                                
                                +" </ul>"
                             +" </li>");
                             

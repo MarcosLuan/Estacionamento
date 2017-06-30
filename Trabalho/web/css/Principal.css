@@ -133,6 +133,9 @@
 .nav-cabeca{
     background-color: #99ff99;
 }
+.btn-salvar{
+    color: #333;
+}
 
 body{
     background-color: #ebebeb;

@@ -26,7 +26,7 @@
             </div>
             <div class="col-sm-offset-2 col-md-6 col-sm-6">
                 <input id="btnLogar" type="submit" class="btn btn-lg btn-primary btn-block btn-login" value="Logar" />
-                <a href="#">Esqueceu a senha?</a>
+                <a href="recuperaSenha.jsp">Esqueceu a senha?</a>
             </div>
         </form>
     </div>

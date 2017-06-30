@@ -25,6 +25,7 @@
     <input type="text" class="form-control" id="modelocar" name="modelocar" value ="${usuario.modelocar}"required/>
     <br>
     <br>
-    <input type="submit" class="btn btn-primary" value="Atualizar" />
+    <%--<input type="submit" class="btn btn-primary" value="Atualizar" />--%>
+    <button class="btn btn-primary glyphicon glyphicon-floppy-disk btn-salvar"> Salvar</button>
 </form>
 <%@include file="/rodape.jsp" %>
