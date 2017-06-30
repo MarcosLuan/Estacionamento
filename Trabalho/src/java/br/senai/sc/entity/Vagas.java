@@ -20,6 +20,7 @@ public class Vagas {
     private double VHcusto;
     private int tempo;
     private String Vreservada;
+    private int Pago;
 
     public String getVreservada() {
         return Vreservada;
@@ -49,7 +50,7 @@ public class Vagas {
         this.Vreservada = Vreservada;
     }
 
-    public Vagas(String VPlaca, String VNome, String VHentrada, String VHsaida, double VHcusto, int tempo, String Vreservada) {
+    public Vagas(String VPlaca, String VNome, String VHentrada, String VHsaida, double VHcusto, int tempo, String Vreservada, int Pago) {
         this.VPlaca = VPlaca;
         this.VNome = VNome;
         this.VHentrada = VHentrada;
@@ -57,11 +58,9 @@ public class Vagas {
         this.VHcusto = VHcusto;
         this.tempo = tempo;
         this.Vreservada = Vreservada;
+        this.Pago = Pago;
     }
-    
 
-    
-    
 
     public String getVHentrada() {
         return VHentrada;
@@ -113,6 +112,13 @@ public class Vagas {
         this.VHcusto = VHcusto;
     }
     
+    public int getPago() {
+        return Pago;
+    }
+
+    public void setPago(int Pago) {
+        this.Pago = Pago;
+    }
     
     
 
@@ -120,6 +126,5 @@ public class Vagas {
     
         return tempo * 0.05;
     }
-    
-    
+   
 }

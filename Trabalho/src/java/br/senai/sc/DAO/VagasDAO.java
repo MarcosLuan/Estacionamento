@@ -19,12 +19,14 @@ import java.util.List;
 public class VagasDAO {
 
     public void insert(Vagas vagas) throws Exception {
-        String sql = "insert into vagas(VPlaca,VNome,VHentrada,Vreservada) values (?,?, current_timestamp,?)";
+        String sql = "insert into vagas(VPlaca,VNome,VHentrada,Vreservada, Pago) values (?,?, current_timestamp,?,?)";
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
 
         sqlPrep.setString(1, vagas.getVPlaca());
         sqlPrep.setString(2, vagas.getVNome());
         sqlPrep.setString(3, vagas.getVreservada());
+        sqlPrep.setInt(4, vagas.getPago());
+        
 
         sqlPrep.execute();
 
@@ -33,7 +35,7 @@ public class VagasDAO {
     public void update(String VPlaca) throws Exception {
 
         String sql = "UPDATE vagas SET VHsaida=current_timestamp, tempo = timestampdiff(minute, VHentrada, VHsaida)"
-                + "  where VPlaca='" + VPlaca + "'";
+                + "  where VPlaca='" + VPlaca + "'and Pago=null";
 
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
 
@@ -51,11 +53,13 @@ public class VagasDAO {
         rs.first();
 
         Vagas vaga = new Vagas(rs.getString("VPlaca"),
-                rs.getString("VNome"),
-                rs.getString("VHentrada"),
-                rs.getString("VHsaida"),
-                rs.getInt("tempo"),
-                rs.getString("Vreservada")
+                    rs.getString("VNome"),
+                    rs.getString("VHentrada"),
+                    rs.getString("VHsaida"),
+                    rs.getDouble("VHcusto"),
+                    rs.getInt("tempo"),
+                    rs.getString("Vreservada"),
+                    rs.getInt("Pago")
         );
         return vaga;
     }
@@ -63,11 +67,12 @@ public class VagasDAO {
     public void updateCusto(Vagas vaga) throws Exception {
 
         String sql = "UPDATE vagas SET VHcusto= " + vaga.getVHcusto()
-                + "  where VPlaca='" + vaga.getVPlaca() + "'";
+                + " ,Pago=1 where VPlaca='" + vaga.getVPlaca() + "'"+"and Pago=null";
 
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
-
-        System.out.println(sqlPrep);
+            
+        System.out.println(sql);
+        System.out.println("Oiiiiiiii");
 
         sqlPrep.execute();
 
@@ -99,7 +104,8 @@ public class VagasDAO {
                     rs.getString("VHsaida"),
                     rs.getDouble("VHcusto"),
                     rs.getInt("tempo"),
-                    rs.getString("Vreservada")
+                    rs.getString("Vreservada"),
+                    rs.getInt("Pago")
                     ));
 
         }
@@ -124,7 +130,8 @@ public class VagasDAO {
                     rs.getString("VHsaida"),
                     rs.getDouble("VHcusto"),
                     rs.getInt("tempo"),
-                    rs.getString("Vreservada")
+                    rs.getString("Vreservada"),
+                    rs.getInt("Pago")
                     ));
 
         }
