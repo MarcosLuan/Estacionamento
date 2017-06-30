@@ -62,15 +62,16 @@ and open the template in the editor.
                                 + " <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Vagas<span class='caret'></span></a>"
                                 +" <ul  class='dropdown-menu'>"
                                  + "   <li><a href='VagaAtualizarServlet'>Verificar vagas</a></li>"
-                                   + " <li role='separator' class='divider'></li>"
-                                   + " <li class='dropdown-header'>Historico</li>"
-                                    + "<li><a href='VagaConsUsuServlet'>Verificar histórico de reservas</a></li>" 
+                           
                                + " </ul>"
                             + "</li>");
                             out.print("<li  id='pagam' class='dropdown'>"
-                                + "<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Pagamento <span class='caret'></span></a>"
+                                + "<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'> <span class = 'glyphicon glyphicon-usd'></span> Pagamento <span class='caret'></span></a>"
                                 + "<ul  class='dropdown-menu'>"
-                                  + "  <li><a href='telaPagamento.jsp'>Registrar saída e efetuar pagamento</a></li>" 
+                                  + "  <li><a href='telaPagamento.jsp'>Registrar saída e efetuar pagamento</a></li>"
+                                           + " <li role='separator' class='divider'></li>"
+                                   + " <li class='dropdown-header'>Historico</li>"
+                                    + "<li><a href='VagaConsUsuServlet'>histórico de Pagamento</a></li>"
                                 
                                +" </ul>"
                             +" </li>");

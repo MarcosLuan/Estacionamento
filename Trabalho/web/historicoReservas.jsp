@@ -7,7 +7,13 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@include file="/cabecalho.jsp" %>
+<ol class="breadcrumb">
+  <li><a href="indexx.jsp">Home</a></li>
+  <li><a href="telaPagamento.jsp">Pagamento</a></li>
+  <li class="active">Histórico Pagamento</li>
+</ol>
 <h1>Listando todas as Reservas</h1>
+
 
         <table class="table table-striped table-bordered table-responsive">
             <thead>

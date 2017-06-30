@@ -6,6 +6,11 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="/cabecalho.jsp" %>
+<ol class="breadcrumb">
+  <li><a href="indexx.jsp">Home</a></li>
+  <li><a href="telaPagamento.jsp">Pagamento</a></li>
+  <li class="active">Tela Pagamento</li>
+</ol>
         <h1>Tela para Pagamento</h1>
         <form action="VagasSaidaServlet" method="POST">
            <!--<h2>O valor para pagamento é: <text type="" value="VHsaida * 0.05"></h2><br>-->  

@@ -6,6 +6,11 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="/cabecalho.jsp" %>
+<ol class="breadcrumb">
+  <li><a href="indexx.jsp">Home</a></li>
+  <li><a href="UsuarioBuscaServlet">Conta</a></li>
+  <li class="active">Atualizar Dados</li>
+</ol>
 
 <h1>Atualizar Dados</h1>
 <form action="UsuarioAtualizarServlet" method="POST">

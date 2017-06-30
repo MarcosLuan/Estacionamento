@@ -6,6 +6,12 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="/cabecalho.jsp" %>
+<ol class="breadcrumb">
+  <li><a href="indexx.jsp">Home</a></li>
+  <li><a href="VagaAtualizarServlet">Vagas</a></li>
+  <li class="active">Vagas Diponíveis</li>
+</ol>
+
 
     <h1>Vagas Disponíveis</h1>
     <!-- Modal -->
