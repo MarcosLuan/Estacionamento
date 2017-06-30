@@ -126,5 +126,6 @@ public class Vagas {
     
         return tempo * 0.05;
     }
+    
    
 }

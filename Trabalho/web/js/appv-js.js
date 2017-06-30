@@ -33,7 +33,7 @@ $(document).ready(function () {
         
         console.log(this.id);
         var botao = $('#btnres01');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -46,7 +46,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres01').text('Ocupado '+response);
+                $('#btnres01').text('Ocupada  '+response);
            }
         });
     });
@@ -54,7 +54,7 @@ $(document).ready(function () {
         $('#btnres02').on('click', function() {
         console.log(this.id);
         var botao = $('#btnres02');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -67,7 +67,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres02').text('Ocupado '+response);
+                $('#btnres02').text('Ocupada  '+response);
            }
         });
     });
@@ -75,7 +75,7 @@ $(document).ready(function () {
         $('#btnres03').on('click', function() {
         
         var botao = $('#btnres03');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -88,7 +88,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres03').text('Ocupado '+response);
+                $('#btnres03').text('Ocupada  '+response);
            }
         });
     });
@@ -96,7 +96,7 @@ $(document).ready(function () {
         $('#btnres04').on('click', function() {
         
         var botao = $('#btnres04');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -109,7 +109,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres04').text('Ocupado '+response);
+                $('#btnres04').text('Ocupada  '+response);
            }
         });
     });
@@ -117,7 +117,7 @@ $(document).ready(function () {
     $('#btnres05').on('click', function() {
         
         var botao = $('#btnres05');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -130,7 +130,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres05').text('Ocupado '+response);
+                $('#btnres05').text('Ocupada  '+response);
            }
         });
     });
@@ -138,7 +138,7 @@ $(document).ready(function () {
     $('#btnres06').on('click', function() {
         
         var botao = $('#btnres06');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -151,7 +151,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres06').text('Ocupado '+response);
+                $('#btnres06').text('Ocupada  '+response);
            }
         });
     });
@@ -159,7 +159,7 @@ $(document).ready(function () {
     $('#btnres07').on('click', function() {
         
         var botao = $('#btnres07');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -172,7 +172,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres07').text('Ocupado '+response);
+                $('#btnres07').text('Ocupada  '+response);
            }
         });
     });
@@ -180,7 +180,7 @@ $(document).ready(function () {
     $('#btnres08').on('click', function() {
         
         var botao = $('#btnres08');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -193,7 +193,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres08').text('Ocupado '+response);
+                $('#btnres08').text('Ocupada  '+response);
            }
         });
     });
@@ -201,7 +201,7 @@ $(document).ready(function () {
     $('#btnres09').on('click', function() {
         
         var botao = $('#btnres09');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -214,7 +214,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres09').text('Ocupado '+response);
+                $('#btnres09').text('Ocupada  '+response);
            }
         });
     });
@@ -222,7 +222,7 @@ $(document).ready(function () {
     $('#btnres10').on('click', function() {
         
         var botao = $('#btnres10');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -235,7 +235,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres10').text('Ocupado '+response);
+                $('#btnres10').text('Ocupada  '+response);
            }
         });
     });
@@ -243,7 +243,7 @@ $(document).ready(function () {
     $('#btnres11').on('click', function() {
         
         var botao = $('#btnres11');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -256,7 +256,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres11').text('Ocupado '+response);
+                $('#btnres11').text('Ocupada  '+response);
            }
         });
     });
@@ -264,7 +264,7 @@ $(document).ready(function () {
     $('#btnres12').on('click', function() {
         
         var botao = $('#btnres12');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -277,7 +277,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres12').text('Ocupado '+response);
+                $('#btnres12').text('Ocupada  '+response);
            }
         });
     });
@@ -285,7 +285,7 @@ $(document).ready(function () {
     $('#btnres13').on('click', function() {
         
         var botao = $('#btnres13');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -298,7 +298,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres13').text('Ocupado '+response);
+                $('#btnres13').text('Ocupada  '+response);
            }
         });
     });
@@ -306,7 +306,7 @@ $(document).ready(function () {
     $('#btnres14').on('click', function() {
         
         var botao = $('#btnres14');
-        //botao.text('Ocupado');
+        //botao.text('Ocupada ');
         botao.removeClass('btn-success');
         botao.addClass('btn-danger');
         botao.addClass('btn-sm');
@@ -319,7 +319,7 @@ $(document).ready(function () {
            },
            
            success: function(response){//retorna uma resposta
-                $('#btnres14').text('Ocupado '+response);
+                $('#btnres14').text('Ocupada  '+response);
            }
         });
     });

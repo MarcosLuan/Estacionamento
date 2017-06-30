@@ -35,7 +35,7 @@ public class VagasDAO {
     public void update(String VPlaca) throws Exception {
 
         String sql = "UPDATE vagas SET VHsaida=current_timestamp, tempo = timestampdiff(minute, VHentrada, VHsaida)"
-                + "  where VPlaca='" + VPlaca + "'and Pago=null";
+                + "  where VPlaca='" + VPlaca + "'and Pago = ''";
 
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
 
@@ -46,7 +46,7 @@ public class VagasDAO {
 
     public Vagas buscarById(String placa) throws Exception {
 
-        String sql = "select * from vagas where VPlaca = '" + placa + "'";
+        String sql = "select * from vagas where VPlaca = '" + placa + "' and Pago = '' ";
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
         ResultSet rs = sqlPrep.executeQuery();
 
@@ -67,7 +67,7 @@ public class VagasDAO {
     public void updateCusto(Vagas vaga) throws Exception {
 
         String sql = "UPDATE vagas SET VHcusto= " + vaga.getVHcusto()
-                + " ,Pago=1 where VPlaca='" + vaga.getVPlaca() + "'"+"and Pago=null";
+                + " ,Pago=1 where VPlaca='" + vaga.getVPlaca() + "'"+"and Pago = '' ";
 
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);
             

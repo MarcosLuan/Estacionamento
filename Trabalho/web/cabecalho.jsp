@@ -25,7 +25,7 @@ and open the template in the editor.
     <body>
 
 
-        <main class="container">
+        
 
             <!-- Static navbar -->
             <nav class="navbar navbar-default">
@@ -97,7 +97,7 @@ and open the template in the editor.
                 </div><!--/.container-fluid -->
 
             </nav>
-
+<main class="container">
             <%--script type="text/javascript">
                 document.getElementById("vagas").style.display = "none";
                 document.getElementById("pagam").style.display = "none";

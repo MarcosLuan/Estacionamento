@@ -13,13 +13,13 @@
             <thead>
                 <tr>
 
-                    <th>Vplaca</th>
-                    <th>VNome</th>
-                    <th>VHentrada</th>
-                    <th>VHsaida</th>
-                    <th>VHcusto</th>
-                    <th>tempo</th>
-                    <th>Vreservada</th>
+                    <th>Placa</th>
+                    <th>Nome</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Custo</th>
+                    <th>Tempo</th>
+                    <%--<th>Vreservada</th>--%>
                 </tr>
             </thead>
             <tbody>

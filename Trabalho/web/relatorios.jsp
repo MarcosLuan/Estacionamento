@@ -19,7 +19,7 @@
                     <th>VHsaida</th>
                     <th>VHcusto</th>
                     <th>tempo</th>
-                    <th>Vreservada</th>
+                    <%--<th>Vreservada</th>--%>
                 </tr>
             </thead>
             <tbody>
