@@ -5,22 +5,9 @@
         <group>
             <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/cabecalho.jsp</file>
             <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/indexx.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/VerVagas.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/pagamento.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VagaConsultaServlet.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/SaidaUsu.html</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioLoginServlet.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VagaEntradaServlet.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/entity/Vagas.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/relatorios.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/DAO/VagasDAO.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VerificacaoServlet.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VagasSaidaServlet.java</file>
             <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VagaAtualizarServlet.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/historicoReservas.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/VagaConsUsuServlet.java</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/cheio.jsp</file>
-            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/css/Principal.css</file>
+            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/web/GanharPontoshtml.html</file>
+            <file>file:/C:/Users/Marcos_Laís/Documents/GitHub/Estacionamento/Trabalho/src/java/br/senai/sc/servlet/UsuarioPontuacaoServlet.java</file>
         </group>
     </open-files>
 </project-private>
