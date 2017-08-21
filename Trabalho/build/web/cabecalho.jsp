@@ -66,7 +66,7 @@ and open the template in the editor.
                                + " </ul>"
                             + "</li>");
                             out.print("<li  id='pagam' class='dropdown'>"
-                                + "<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'> <span class = 'glyphicon glyphicon-usd'> </span> Pagamento <span class='caret'></span></a>"
+                                + "<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'> <span class = 'glyphicon glyphicon-usd'></span> Pagamento <span class='caret'></span></a>"
                                 + "<ul  class='dropdown-menu'>"
                                   + "  <li><a href='telaPagamento.jsp'>Registrar saída e efetuar pagamento</a></li>"
                                            + " <li role='separator' class='divider'></li>"
@@ -76,27 +76,24 @@ and open the template in the editor.
                                +" </ul>"
                             +" </li>");
                             
-                            out.print("<li id='Pontuação' class='dropdown'>"
-                                + " <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'> <span class = 'glyphicon glyphicon-star-empty'></span> Pontuação<span class='caret'></span></a>"
-                                +" <ul  class='dropdown-menu'>"
-                                 + "   <li><a href='UsuarioPontuacaoServlet'>Bônus Acumulado</a></li>"
-                                    + "<li><a href='###'>Como Ganhar Pontos</a></li>"
-                                    + "<li><a href='VagaConsUsuServlet'> XXXXXXXXXXX </a></li>"                           
-                               + " </ul>"
-                            + "</li>");
-                            
-                            out.print("<li class='progress'>"
-                                        +"<ul class='progress-bar progress-bar-striped active' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 45%; color: black; '>45% Complete"
-                                        +" </ul>"
-                                    +" </li>");                                                        
+
                             }
                             %>
                             
-                            </ul>
-                            <ul id="Login" class="nav navbar-nav navbar-right">                            
+                        </ul>
+                        <ul id="Login" class="nav navbar-nav navbar-right">
+
+
+
+
+
+
+
+
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
+
             </nav>
 <main class="container">
             <%--script type="text/javascript">
