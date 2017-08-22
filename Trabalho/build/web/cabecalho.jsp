@@ -76,12 +76,22 @@ and open the template in the editor.
                                +" </ul>"
                             +" </li>");
                             
+                            
+                            
 
                             }
                             %>
                             
                         </ul>
+                        <ul class="nav navbar-nav navbar-left " style="padding: 15px; border-left: 1px solid #1f8620" >
+                        <li class="progress" style="margin-bottom: 0 !important" >
+                        <div class='progress-bar progress-bar-striped active' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 45%; color: black;height: 20px; '>
+                        45% Complete 
+                        </div>
+                        </li>
+                        </ul>
                         <ul id="Login" class="nav navbar-nav navbar-right">
+
 
 
 
