@@ -6,7 +6,8 @@
 package br.senai.sc.entity;
 
 import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
-import javax.servlet.http.HttpSession;
+//import javax.servlet.http.HttpSession;
+
 
 /**
  *

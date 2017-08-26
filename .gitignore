@@ -1,0 +1,8 @@
+/Trabalho/dist/
+/Trabalho/build/
+/Trabalho/nbproject/
+/Trabalho/src/conf/
+Trabalho/build.xml
+Trabalho/src/java/br/senai/sc/servlet/ServletException.java
+.project
+.classpath
