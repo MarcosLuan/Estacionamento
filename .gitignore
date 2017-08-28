@@ -2,8 +2,3 @@
 /Trabalho/build/
 /Trabalho/nbproject/
 /Trabalho/src/conf/
-Trabalho/build.xml
-.project
-.classpath
-Trabalho/dist/Trabalho.war
-*.properties

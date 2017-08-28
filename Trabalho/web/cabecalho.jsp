@@ -1,7 +1,7 @@
 <%-- 
     Document   : cabecalho
     Created on : 08/06/2017, 10:48:45
-    Author     : andersonfrare
+    Author     : marcos_laís
 --%>
 
 <%@page import="java.lang.String"%>
@@ -66,44 +66,41 @@ and open the template in the editor.
                                + " </ul>"
                             + "</li>");
                             out.print("<li  id='pagam' class='dropdown'>"
+                                
                                 + "<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'> <span class = 'glyphicon glyphicon-usd'></span> Pagamento <span class='caret'></span></a>"
                                 + "<ul  class='dropdown-menu'>"
                                   + "  <li><a href='telaPagamento.jsp'>Registrar saída e efetuar pagamento</a></li>"
                                            + " <li role='separator' class='divider'></li>"
                                    + " <li class='dropdown-header'>Historico</li>"
                                     + "<li><a href='VagaConsUsuServlet'>histórico de Pagamento</a></li>"
-                                
-                               +" </ul>"
+                                +" </ul>"
                             +" </li>");
                             
+                            out.print("<li id='Pontuação' class='dropdown'>"
+                                + " <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'> <span class = 'glyphicon glyphicon-star-empty'></span> Pontuação<span class='caret'></span></a>"
+                                +" <ul  class='dropdown-menu'>"
+                                 + "   <li><a href='UsuarioPontuacaoServlet'>Bônus Acumulado</a></li>"
+                                    + "<li><a href='###'>Como Ganhar Pontos</a></li>"
+                                    + "<li><a href='VagaConsUsuServlet'> XXXXXXXXXXX </a></li>"                           
+                               + " </ul>"
+                            + "</li>");
                             
-                            
-
-                            }
+                            out.print("<ul class='nav navbar-nav navbar-left ' style='padding: 15px; border-left: 1px solid #1f8620' >"
+                                        +"<li class='progress' style='margin-bottom: 0 !important' >"
+                                            +"<div class='progress-bar progress-bar-striped active' "
+                                            +"role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 45%; color: black;height: 20px; '>"
+                                                +"45% Complete"
+                                            +"</div>"
+                                        +"</li>"
+                                    +"</ul>");
+                                }
                             %>
                             
-                        </ul>
-                        <ul class="nav navbar-nav navbar-left " style="padding: 15px; border-left: 1px solid #1f8620" >
-                        <li class="progress" style="margin-bottom: 0 !important" >
-                        <div class='progress-bar progress-bar-striped active' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 45%; color: black;height: 20px; '>
-                        45% Complete 
-                        </div>
-                        </li>
-                        </ul>
-                        <ul id="Login" class="nav navbar-nav navbar-right">
-
-
-
-
-
-
-
-
-
+                            </ul>
+                            <ul id="Login" class="nav navbar-nav navbar-right">                            
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
-
             </nav>
 <main class="container">
             <%--script type="text/javascript">

@@ -131,12 +131,13 @@
 }
 
 .nav-cabeca{
+    
     background-color: #7fd681;
 }
 .container-fluid{
     box-shadow: 0 1px 12px 0 rgba(50,50,50,.5);
 }
-.nav{
+.navbar-nav>li>a{
     border-left: 1px solid #1f8620;
 }
 .btn-salvar{
