@@ -25,54 +25,45 @@ import javax.servlet.http.HttpSession;
 @WebServlet(name = "UsuarioLoginServlet", urlPatterns = {"/UsuarioLoginServlet"})
 public class UsuarioLoginServlet extends HttpServlet {
 
-    
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        
-    
+  @Override
+  protected void doPost(HttpServletRequest request, HttpServletResponse response)
+          throws ServletException, IOException {
 
     /**
      * Returns a short description of the servlet.
      *
      * @return a String containing servlet description
      */
-     String email = request.getParameter("email");
-        String senha = request.getParameter("senha");
+    String email = request.getParameter("email");
+    String senha = request.getParameter("senha");
 
-        UsuarioDAO uDAO = new UsuarioDAO();
-        HttpSession session = request.getSession();
-        
-        
-            Usuario usuario;
-        try {
-            usuario = uDAO.BuscarUsuario(email, senha);
-            if (usuario == null) {
-                String mensagem = "Usuario ou senha nao encontrado";
-                request.setAttribute("mensagem", mensagem);
-                request.setAttribute("class", "alert-danger");
-                
-            }else{
+    UsuarioDAO uDAO = new UsuarioDAO();
+    HttpSession session = request.getSession();
 
-            /*Receber os dados do usuário e consultar do banco*/
-            session.setAttribute("user", usuario.getEmail());
-            session.setAttribute("placa", usuario.getPlacacar());
-            session.setAttribute("nome", usuario.getNome());
-            
+    Usuario usuario;
+    try {
+      usuario = uDAO.BuscarUsuario(email, senha);
+      if (usuario == null) {
+        String mensagem = "Usuario ou senha nao encontrado";
+        request.setAttribute("mensagem", mensagem);
+        request.setAttribute("class", "alert-danger");
 
-            String mensagem = "Usuario "+usuario.getEmail() + " logado com sucesso!!";
-                request.setAttribute("mensagem", mensagem);
-                request.setAttribute("class", "alert-success");
-                
-            request.getRequestDispatcher("indexx.jsp").forward(request, response);
+      } else {
 
-            }
-        } catch (Exception ex) {
-            Logger.getLogger(UsuarioLoginServlet.class.getName()).log(Level.SEVERE, null, ex);
-        }            
+        /*Receber os dados do usuário e consultar do banco*/
+        session.setAttribute("user", usuario.getEmail());
+        session.setAttribute("placa", usuario.getPlacacar());
+        session.setAttribute("nome", usuario.getNome());
+
+        String mensagem = "Usuario " + usuario.getEmail() + " logado com sucesso!!";
+        request.setAttribute("mensagem", mensagem);
+        request.setAttribute("class", "alert-success");
+
+        request.getRequestDispatcher("indexx.jsp").forward(request, response);
+
+      }
+    } catch (Exception ex) {
+      Logger.getLogger(UsuarioLoginServlet.class.getName()).log(Level.SEVERE, null, ex);
     }
+  }
 }
-
-
-
