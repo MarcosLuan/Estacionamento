@@ -72,7 +72,7 @@ and open the template in the editor.
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class = "glyphicon glyphicon-star-empty"></span> Pontuação<span class="caret"></span></a>
               <ul  class="dropdown-menu">
                 <li><a href="UsuarioPontuacaoServlet">Bônus Acumulado</a></li>
-                <li><a href="###">Como Ganhar Pontos</a></li>
+                <li><a href="helpPontos.jsp">Como Ganhar Pontos</a></li>
                 <li><a href="VagaConsUsuServlet"> XXXXXXXXXXX </a></li>
               </ul>
             </li>

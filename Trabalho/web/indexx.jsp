@@ -8,9 +8,9 @@
 <%@include file="/cabecalho.jsp" %>
 
 
-      			<H1 class="text-center">Estacione em 3 etapas </H1>
-      			<br>
-      			<br>
-      			<H2 class="text-center">Reserve, Estacione, Pague</H2>
+<H1 class="text-center">Estacione em 3 etapas </H1>
+<br>
+<br>
+<H2 class="text-center">Reserve, Estacione, Pague</H2>
 
- <%@include file="/rodape.jsp" %>
+<%@include file="/rodape.jsp" %>
