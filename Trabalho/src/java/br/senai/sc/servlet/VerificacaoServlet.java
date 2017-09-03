@@ -47,7 +47,7 @@ public class VerificacaoServlet extends HttpServlet {
                 response.getWriter().write("<li>"+ user+ "</li>");
                 response.getWriter().write("<li><a href='UsuarioBuscaServlet'>Atualizar dados</a></li>");
                 response.getWriter().write("<li role='separator' class='divider'></li>");
-                response.getWriter().write("<li><a href='UsuarioDeslogaServlet'>deslogar</a></li>");
+                response.getWriter().write("<li><a href='UsuarioDeslogaServlet'>Sair</a></li>");
                 
                 response.getWriter().write("</ul>");
                 response.getWriter().write("</li>");
