@@ -53,7 +53,9 @@ public class VerificacaoServlet extends HttpServlet {
                 response.getWriter().write("</li>");
             }else{
                 response.setContentType("text/plain");
-                response.getWriter().write("<a href='login.jsp'>Login</a>");
+                response.getWriter().write("<li>");
+                response.getWriter().write("<a href='login.jsp'><span class='glyphicon glyphicon-user'></span>&nbspLogin</a>");
+                response.getWriter().write("</li>");
             }
         }
     }
