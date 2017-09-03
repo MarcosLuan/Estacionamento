@@ -39,7 +39,7 @@ and open the template in the editor.
           <ul class="nav navbar-nav">
             <li><a href="indexx.jsp"><span class = "glyphicon glyphicon-home"></span> Home</a></li>
               <%//verifica se a sessao do usuario é válida
-              if ("admin@admin.com".equals((String) session.getAttribute("user"))) {%>
+                if ("admin@admin.com".equals((String) session.getAttribute("user"))) {%>
             <li id="admin" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admininstrador<span class="caret"></span></a>
               <ul  class="dropdown-menu">
@@ -73,7 +73,7 @@ and open the template in the editor.
               <ul  class="dropdown-menu">
                 <li><a href="UsuarioPontuacaoServlet">Bônus Acumulado</a></li>
                 <li><a href="helpPontos.jsp">Como Ganhar Pontos</a></li>
-                <li><a href="VagaConsUsuServlet"> XXXXXXXXXXX </a></li>
+                <li><a href="xxxxxxxxxxxxx">Indicar amigos</a></li>
               </ul>
             </li>
 
