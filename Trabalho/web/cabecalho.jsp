@@ -22,7 +22,7 @@ and open the template in the editor.
     <link rel="SHORTCUT ICON" href="img/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body>    
     <!-- Static navbar -->
     <nav class="navbar navbar-default">
       <div class="container-fluid nav-cabeca">
