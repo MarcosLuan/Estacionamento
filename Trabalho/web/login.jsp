@@ -29,25 +29,27 @@
         FB.AppEvents.logPageView();
       };
 
-      (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      <div id="fb-root"></div>
+          <div id="fb-root"></div>
+              (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                  return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));
     </script>
     <div id="fb-root"></div>
-    <script>(function (d, s, id) {
+    <script>
+      (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id))
           return;
         js = d.createElement(s);
         js.id = id;
-        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10&appId=138179123462896";
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10&appId=348438355613072";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -79,7 +81,6 @@
     </form>
   </div>
 
-
   <div class="col-md-4 col-sm-4">
     <h3>Não é cadastrado?</h3>
     <div class="col-sm-offset-1 col-md-2 col-sm-2">
@@ -87,5 +88,29 @@
         <input class="btn btn-success btn-cadasto" type="submit" value="Criar novo Usuario" />
       </form>
     </div>
-  </div>
-  <%@include file="/rodape.jsp" %>   
+    <br><br><br><br><br><br><br>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id))
+          return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Compartilhar</a>
+    </div>
+    <br><br>
+    <div><a>
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: pt_BR</script>
+        <script type="IN/Share" data-counter="right"></script></a>
+    </div>
+    <br>
+    <div>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+
+ 
+
+    <%@include file="/rodape.jsp" %>
