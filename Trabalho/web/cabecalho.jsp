@@ -17,6 +17,9 @@ and open the template in the editor.
   <head>
     <title>Estacionamento Online</title>
     <meta charset="UTF-8">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="939508598651-b77pcu0efq78mcgrd592t9jjh6s0sskq.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Principal.css"/>
     <link rel="SHORTCUT ICON" href="img/favicon.ico"/>
