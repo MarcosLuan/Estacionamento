@@ -9,12 +9,11 @@
 
 <h1 class="text-center">Login</h1>
 
-
 <div class="col-md-6 col-sm-12">
 
   <div class="row">
-    <!-- Facebok -->
-    <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="false"></div>
+    <!-- Facebook -->
+    <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>
     <script>
       window.fbAsyncInit = function () {
         FB.init({
@@ -41,13 +40,12 @@
         js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    </script>    
-
-
-
+    </script>
     <!-- Fim Facebook -->
+    
+    <br><br>
+    
   </div>
-
   <div class="row">
     <!-- Google -->
     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
@@ -68,12 +66,46 @@
       ;
     </script>
     <!-- Fim Google -->
+    
+    <br>
+    
   </div>
   <div class="row">
     <!-- LinkedIn -->
-    <p>LinkedIn</p>
+    <script type="in/Login"></script>
+    <script type="text/javascript" src="//platform.linkedin.com/in.js">
+    api_key: 78nr4vm07lxnb9
+    authorize: true
+    onLoad: onLinkedInLoad
+</script>
+
+<script type="text/javascript">
+    
+    // Setup an event listener to make an API call once auth is complete
+    function onLinkedInLoad() {
+        IN.Event.on(IN, "auth", getProfileData);
+    }
+
+    // Handle the successful return from the API call
+    function onSuccess(data) {
+        console.log(data);
+    }
+
+    // Handle an error response from the API call
+    function onError(error) {
+        console.log(error);
+    }
+
+    // Use the API call wrapper to request the member's basic profile data
+    function getProfileData() {
+        IN.API.Raw("/people/~").result(onSuccess).error(onError);
+    }
+
+</script>
     <!-- Fim LinkedIn -->
   </div>
+  
+  <br>
 
   <div class="row">
     <!-- Formulario -->
