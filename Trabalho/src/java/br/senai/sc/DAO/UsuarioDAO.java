@@ -63,7 +63,9 @@ public class UsuarioDAO {
                 rs.getString("email"),
                 rs.getString("senha"),
                 rs.getString("placacar"),
-                rs.getString("modelocar"));
+                rs.getString("modelocar"),
+                rs.getInt("tempo"));
+                
         
 
         
@@ -81,6 +83,18 @@ public void update(Usuario usuario) throws Exception{
 + "`placacar` = '" + usuario.getPlacacar() +"' ,"
 + "`modelocar` = ' " + usuario.getModelocar() + "'"
 + "WHERE `email` ='"+ usuario.getEmail()+ "' " ;
+
+        java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);        
+        
+        System.out.println(sqlPrep);
+        
+        sqlPrep.execute();
+      }
+public void updateTempo(Usuario usuario) throws Exception{
+        
+        String sql = "UPDATE `Estacionamento`.`Usuario`"
+       +"SET `tempo` = '"+usuario.getTempo()+"'"
+       + "WHERE `email` ='"+ usuario.getEmail()+ "' " ;
 
         java.sql.PreparedStatement sqlPrep = Conexao.getConnection().prepareStatement(sql);        
         

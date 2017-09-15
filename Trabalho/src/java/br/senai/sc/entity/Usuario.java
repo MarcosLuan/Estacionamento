@@ -19,6 +19,7 @@ public class Usuario {
     private String senha;
     private String placacar;
     private String modelocar;
+    private int tempo;
 
     public Usuario() {
     }
@@ -30,6 +31,15 @@ public class Usuario {
         this.placacar = placacar;
         this.modelocar = modelocar;
     }
+// para atuazar tempo
+  public Usuario(String nome, String email, String senha, String placacar, String modelocar, int tempo) {
+    this.nome = nome;
+    this.email = email;
+    this.senha = senha;
+    this.placacar = placacar;
+    this.modelocar = modelocar;
+    this.tempo = tempo;
+  }
 
     public Usuario(String nome, String senha, String placacar, String modelocar) {
         this.nome = nome;
@@ -83,4 +93,15 @@ public class Usuario {
 
         session.setAttribute("user", usuario);
     }*/
+
+  public int getTempo() {
+    return tempo;
+  }
+
+  public void setTempo(int tempo) {
+    this.tempo = tempo;
+  }
+    
+
+  
 }
