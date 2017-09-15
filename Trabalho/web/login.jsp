@@ -5,9 +5,13 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@include file="/cabecalho.jsp" %>
 
 <h1 class="text-center">Login</h1>
+<c:if test="${mensagem != ''}">
+  <p class="${class}" style="text-align: center;">${mensagem}</p>
+</c:if>
 
 <div class="col-md-6 col-sm-12">
 

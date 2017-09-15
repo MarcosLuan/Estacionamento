@@ -43,10 +43,12 @@ public class UsuarioLoginServlet extends HttpServlet {
     Usuario usuario;
     try {
       usuario = uDAO.BuscarUsuario(email, senha);
+      
       if (usuario == null) {
-        String mensagem = "Usuario ou senha nao encontrado";
+        String mensagem = "Usuário ou senha não encontrados";
         request.setAttribute("mensagem", mensagem);
         request.setAttribute("class", "alert-danger");
+        request.getRequestDispatcher("login.jsp").forward(request, response);
 
       } else {
 
