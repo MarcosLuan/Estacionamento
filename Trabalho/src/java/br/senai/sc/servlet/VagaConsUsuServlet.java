@@ -31,8 +31,13 @@ public class VagaConsUsuServlet extends HttpServlet {
         @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
+        HttpSession session = request.getSession(); 
+      //valida Sessao
+       if (session.getAttribute("user") == null) {
+        request.getRequestDispatcher("login.jsp").forward(request, response);
+        }
         
-        HttpSession session = request.getSession();
         UsuarioDAO uDAO = new UsuarioDAO();
         VagasDAO vDAO = new VagasDAO();
         String email = (String) session.getAttribute("user");

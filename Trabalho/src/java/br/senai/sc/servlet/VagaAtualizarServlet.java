@@ -16,6 +16,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -27,8 +28,13 @@ public class VagaAtualizarServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+      HttpSession session = request.getSession(); 
+      //valida Sessao
+       if (session.getAttribute("user") == null) {
+        request.getRequestDispatcher("login.jsp").forward(request, response);
+        }
 
-        ReservarDAO rDAO = new ReservarDAO();
+      ReservarDAO rDAO = new ReservarDAO();
         try {
             if(rDAO.verificarTamanho() >= 14){
                 request.getRequestDispatcher("cheio.jsp").forward(request, response);
