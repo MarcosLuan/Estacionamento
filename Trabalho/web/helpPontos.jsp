@@ -9,7 +9,7 @@
 <%@include file="/cabecalho.jsp" %>
 
 
-<H1 class="text-center"><u>Como ganhar pontos</u></H1>
+<h1 >Como ganhar pontos</h1>
 
 <p>Para ganhar bônus é simples, basta instalar o aplicativo em seu celular e seguir os passos abaixo.</p>
 <ul>
@@ -21,7 +21,7 @@
   <li>Para reservas de 1 dia você ganha 1:30h de bônus.</li>
 </ul>
 
-<H3 class="text-center"><u>Acompanhando a sua barra de progresso</u></H3>
+<h3> Acompanhando a sua barra de progresso</h3>
 
 <p>A barra de progresso aumentará de acordo com os minutos estacionados, detalhado abaixo com os bônus que você poderá ganhar:
 <p><span class = "glyphicon glyphicon-star-empty"></span> (1 estrela): após 500 minutos estacionado – ganha 30 minutos de bônus;</p>

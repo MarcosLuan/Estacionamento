@@ -155,3 +155,14 @@ main {
 .ladodir{
   
 }
+h1::after, h3::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  margin: 10px auto;
+  background: currentColor;
+}
+h1,h3{
+  text-align: center;
+}
