@@ -23,7 +23,8 @@
           <h4 class="modal-title">Mensagem</h4>
         </div>
         <div class="modal-body">
-          <p class="alert alert-success" >Vaga reservada!</p>
+          <p class="alert alert-success reserva" >Vaga reservada!</p>
+          <p class="loader">Aguarde...</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
