@@ -1,0 +1,66 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package br.senai.sc.servlet;
+
+import br.senai.sc.DAO.ReservarDAO;
+import br.senai.sc.DAO.VagasDAO;
+import br.senai.sc.entity.Reservas;
+import br.senai.sc.entity.Vagas;
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+/**
+ *
+ * @author andersonfrare
+ */
+@WebServlet(name = "VagaEntradaServlet", urlPatterns = {"/VagaEntradaServlet"})
+public class VagaEntradaServlet extends HttpServlet {
+
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+                HttpSession session = request.getSession();
+        
+                String placa = (String) session.getAttribute("placa");
+                String nome = (String) session.getAttribute("nome");
+                String Vreservada = request.getParameter("Vreservada");
+                
+                
+
+                
+                Vagas vagas = new Vagas(placa,nome,Vreservada);
+                request.setAttribute("vagas", vagas);
+                Reservas reserva = new Reservas(Vreservada,1,placa);
+                
+        VagasDAO vDAO = new VagasDAO();
+        ReservarDAO rDAO = new ReservarDAO();  
+        
+        try{
+            vDAO.insert(vagas);
+            //rDAO.insert(reserva);
+            rDAO.update(reserva);
+            
+            
+        } catch (Exception ex) {
+            System.out.println("Erro: "+ex);
+        }
+        
+                response.setContentType("text/plain");
+                response.getWriter().write(placa);
+        
+        
+        
+    }
+
+   
+}

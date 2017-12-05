@@ -74,20 +74,22 @@ and open the template in the editor.
             <li id="Pontuação" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class = "glyphicon glyphicon-star-empty"></span> Pontuação<span class="caret"></span></a>
               <ul  class="dropdown-menu">
-                <li><a href="UsuarioPontuacaoServlet">Bônus Acumulado</a></li>
+                <li><a href="bonus.jsp">Bônus Acumulado</a></li>
                 <li><a href="helpPontos.jsp">Como Ganhar Pontos</a></li>
                 <li><a href="xxxxxxxxxxxxx">Indicar amigos</a></li>
               </ul>
             </li>
-
             <ul class="nav navbar-nav navbar-left " style="padding: 15px; border-left: 1px solid #1f8620" >
               <li class="progress" style="margin-bottom: 0 !important" >
+                
                 <div class="progress-bar progress-bar-striped active" 
                      role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%; color: black;height: 20px; ">
-                  45% Complete"
+                  <span id="progress_info">0</span>% Complete"
                 </div>
               </li>
             </ul>
+            <ul>  <li><span id="tempo"></span> minutos estacionados</li></ul>
+
             <%}%>
           </ul>
           <ul id="Login" class="nav navbar-nav navbar-right">                            
